@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configs\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopOnline.Data\ShopOnline.Data.csproj" />
+    <ProjectReference Include="..\ShopOnline.Infrastructure\ShopOnline.Infrastructure.csproj" />
+    <ProjectReference Include="..\ShopOnline.Utilities\ShopOnline.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
