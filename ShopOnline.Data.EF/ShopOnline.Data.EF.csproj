@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ShopOnline.Data\ShopOnline.Data.csproj" />
     <ProjectReference Include="..\ShopOnline.Infrastructure\ShopOnline.Infrastructure.csproj" />
     <ProjectReference Include="..\ShopOnline.Utilities\ShopOnline.Utilities.csproj" />
