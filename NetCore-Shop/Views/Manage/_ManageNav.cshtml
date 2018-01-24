@@ -1,5 +1,6 @@
 ﻿@using NetCore_Shop.Views.Manage
-@inject SignInManager<ApplicationUser> SignInManager
+@using ShopOnline.Data.Entities
+@inject SignInManager<AppUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }

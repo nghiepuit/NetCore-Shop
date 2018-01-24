@@ -2,6 +2,7 @@
 using ShopOnline.Data.Entities;
 using ShopOnline.Data.Enums;
 using ShopOnline.Utilities.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,6 +53,9 @@ namespace ShopOnline.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
+                    DateCreated = DateTime.Now,
+                    DateModified = DateTime.Now,
+                    Status = Status.Active
                 }, "123654$");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");

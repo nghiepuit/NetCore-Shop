@@ -1,6 +1,7 @@
 ﻿using ShopOnline.Data.Enums;
 using ShopOnline.Data.Interfaces;
 using ShopOnline.Infrastructure.SharedKernel;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -24,8 +25,10 @@ namespace ShopOnline.Data.Entities
         [StringLength(20)]
         public string PositionId { get; set; }
 
-        public Status Status { get; set; }
-        public int SortOrder { get; set; }
+        public Status Status { set; get; }
+        public DateTime DateCreated { set; get; }
+        public DateTime DateModified { set; get; }
+        public int SortOrder { set; get; }
 
         [ForeignKey("PositionId")]
         public virtual AdvertistmentPosition AdvertistmentPosition { get; set; }

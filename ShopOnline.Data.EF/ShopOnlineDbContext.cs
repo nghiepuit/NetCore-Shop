@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 using ShopOnline.Data.EF.Configurations;
 using ShopOnline.Data.EF.Extensions;
 using ShopOnline.Data.Entities;
 using ShopOnline.Data.Interfaces;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace ShopOnline.Data.EF
@@ -55,13 +58,13 @@ namespace ShopOnline.Data.EF
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<IdentityUserClaim<string>>().ToTable("AppUserClaims").HasKey(x => x.Id);
-            builder.Entity<IdentityRoleClaim<string>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
-            builder.Entity<IdentityUserLogin<string>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
-            builder.Entity<IdentityUserRole<string>>().ToTable("AppUserRoles").HasKey(x => new { x.RoleId, x.UserId });
-            builder.Entity<IdentityUserRole<string>>().ToTable("AppUserTokens").HasKey(x => new { x.UserId });
+            builder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims").HasKey(x => x.Id);
+            builder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims").HasKey(x => x.Id);
+            builder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+            builder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new { x.RoleId, x.UserId });
+            builder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => new { x.UserId });
 
-            builder.AddConfiguration(new AdvertistmentPositionConfiguration());
+            builder.AddConfiguration(new TagConfiguration());
             builder.AddConfiguration(new BlogTagConfiguration());
             builder.AddConfiguration(new ContactDetailConfiguration());
             builder.AddConfiguration(new FooterConfiguration());
@@ -69,8 +72,10 @@ namespace ShopOnline.Data.EF
             builder.AddConfiguration(new PageConfiguration());
             builder.AddConfiguration(new ProductTagConfiguration());
             builder.AddConfiguration(new SystemConfigConfiguration());
-            builder.AddConfiguration(new TagConfiguration());
-            base.OnModelCreating(builder);
+            builder.AddConfiguration(new AdvertistmentPositionConfiguration());
+            builder.AddConfiguration(new AdvertistmentPageConfiguration());
+            builder.AddConfiguration(new AnnouncementConfiguration());
+            // base.OnModelCreating(builder);
         }
 
         public override int SaveChanges()
@@ -89,6 +94,21 @@ namespace ShopOnline.Data.EF
                 }
             }
             return base.SaveChanges();
+        }
+    }
+
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<ShopOnlineDbContext>
+    {
+        public ShopOnlineDbContext CreateDbContext(string[] args)
+        {
+            IConfiguration config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+            var builder = new DbContextOptionsBuilder<ShopOnlineDbContext>();
+            var connectionString = config.GetConnectionString("DefaultConnection");
+            builder.UseSqlServer(connectionString);
+            return new ShopOnlineDbContext(builder.Options);
         }
     }
 }
