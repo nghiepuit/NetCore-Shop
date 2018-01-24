@@ -28,4 +28,8 @@
     <ProjectReference Include="..\ShopOnline.Utilities\ShopOnline.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\admin-side\custom\controllers\" />
+  </ItemGroup>
+
 </Project>
