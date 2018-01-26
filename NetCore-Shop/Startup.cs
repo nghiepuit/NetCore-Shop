@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using NetCore_Shop.Services;
+using Newtonsoft.Json.Serialization;
 using ShopOnline.Data.EF;
 using ShopOnline.Data.EF.Repositories;
 using ShopOnline.Data.Entities;
@@ -70,12 +72,13 @@ namespace NetCore_Shop
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/ShopOnline-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -88,7 +91,6 @@ namespace NetCore_Shop
             }
 
             app.UseStaticFiles();
-
             app.UseAuthentication();
 
             app.UseMvc(routes =>
@@ -99,12 +101,10 @@ namespace NetCore_Shop
                 );
 
                 routes.MapRoute(
-                    name : "areaRoute",
-                    template : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
                 );
-
             });
-
         }
     }
 }
