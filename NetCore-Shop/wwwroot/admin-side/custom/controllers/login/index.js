@@ -5,9 +5,10 @@
 
     var registerEvents = function () {
         $('#frmLogin').validate({
-            errorClass: 'text-danger',
+            errorElement: "span",
+            errorClass: 'error-validate',
             ignore : [],
-            lang : 'vi',
+            lang : 'en',
             rules: {
                 txtUsername: { 
                     required: true
@@ -41,7 +42,7 @@
                 if (res.Success) {
                     window.location.href = '/admin/home/index';
                 } else {
-                    app.notify('Đăng nhập thất bại!', 'error');
+                    app.notify('Login failed!', 'error');
                 }
             }
         });

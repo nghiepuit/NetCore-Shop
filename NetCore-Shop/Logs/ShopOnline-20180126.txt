@@ -1,0 +1,1265 @@
+2018-01-26T23:01:40.5569615+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:01:40.8348647+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:01:40.8548861+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:01:40.8704910+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:01:40.8903977+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:01:40.8946655+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:01:40.9406274+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:01:40.9675687+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:01:40.9797061+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:01:40.9929731+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:01:41.0459105+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:01:41.0553237+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:01:41.0587307+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:01:41.3374604+07:00 0HLB4QOBDIHPK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/   (ca22a1cb)
+2018-01-26T23:01:41.4955242+07:00 0HLB4QOBDIHPK:00000001 [INF] Executing action method "NetCore_Shop.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:01:44.5991512+07:00 0HLB4QOBDIHPK:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:01:45.1862625+07:00 0HLB4QOBDIHPK:00000001 [INF] Executed action "NetCore_Shop.Controllers.HomeController.Index (NetCore-Shop)" in 3694.9816ms (afa2e885)
+2018-01-26T23:01:45.1896470+07:00 0HLB4QOBDIHPK:00000001 [INF] Request finished in 3876.192ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:01:45.2034559+07:00 0HLB4QOBDIHPM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-01-26T23:01:45.2034863+07:00 0HLB4QOBDIHPK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/css/site.css   (ca22a1cb)
+2018-01-26T23:01:45.2035251+07:00 0HLB4QOBDIHPL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-01-26T23:01:45.2052183+07:00 0HLB4QOBDIHPK:00000002 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-01-26T23:01:45.2054159+07:00 0HLB4QOBDIHPL:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\js\site.js"' (27b0a520)
+2018-01-26T23:01:45.2075848+07:00 0HLB4QOBDIHPK:00000002 [INF] Request finished in 4.3421ms 304 text/css (791a596a)
+2018-01-26T23:01:45.2088387+07:00 0HLB4QOBDIHPL:00000001 [INF] Request finished in 5.3961ms 200 application/javascript (791a596a)
+2018-01-26T23:01:45.2132780+07:00 0HLB4QOBDIHPK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-01-26T23:01:45.2136067+07:00 0HLB4QOBDIHPK:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-01-26T23:01:45.2137019+07:00 0HLB4QOBDIHPL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/images/banner1.svg   (ca22a1cb)
+2018-01-26T23:01:45.2180594+07:00 0HLB4QOBDIHPQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/images/banner4.svg   (ca22a1cb)
+2018-01-26T23:01:45.2180772+07:00 0HLB4QOBDIHPO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/images/banner3.svg   (ca22a1cb)
+2018-01-26T23:01:45.2182222+07:00 0HLB4QOBDIHPN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/images/banner2.svg   (ca22a1cb)
+2018-01-26T23:01:45.2190811+07:00 0HLB4QOBDIHPP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-01-26T23:01:45.2193651+07:00 0HLB4QOBDIHPP:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-01-26T23:01:45.2212401+07:00 0HLB4QOBDIHPM:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-01-26T23:01:45.2291093+07:00 0HLB4QOBDIHPQ:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\images\banner4.svg"' (27b0a520)
+2018-01-26T23:01:45.2291097+07:00 0HLB4QOBDIHPO:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\images\banner3.svg"' (27b0a520)
+2018-01-26T23:01:45.2294819+07:00 0HLB4QOBDIHPN:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\images\banner2.svg"' (27b0a520)
+2018-01-26T23:01:45.2296438+07:00 0HLB4QOBDIHPL:00000002 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\images\banner1.svg"' (27b0a520)
+2018-01-26T23:01:45.2310834+07:00 0HLB4QOBDIHPK:00000003 [INF] Request finished in 17.8429ms 200 application/javascript (791a596a)
+2018-01-26T23:01:45.2728149+07:00 0HLB4QOBDIHPO:00000001 [INF] Request finished in 54.6401ms 200 image/svg+xml (791a596a)
+2018-01-26T23:01:45.2747736+07:00 0HLB4QOBDIHPN:00000001 [INF] Request finished in 58.4418ms 200 image/svg+xml (791a596a)
+2018-01-26T23:01:45.2781349+07:00 0HLB4QOBDIHPM:00000001 [INF] Request finished in 74.1194ms 200 text/css (791a596a)
+2018-01-26T23:01:45.2803519+07:00 0HLB4QOBDIHPQ:00000001 [INF] Request finished in 61.3949ms 200 image/svg+xml (791a596a)
+2018-01-26T23:01:45.2818551+07:00 0HLB4QOBDIHPL:00000002 [INF] Request finished in 67.894ms 200 image/svg+xml (791a596a)
+2018-01-26T23:01:45.3035543+07:00 0HLB4QOBDIHPP:00000001 [INF] Request finished in 84.427ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.4720022+07:00 0HLB4QOBDIHPK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:01:56.4782062+07:00 0HLB4QOBDIHPK:00000004 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:01:56.6384543+07:00 0HLB4QOBDIHPK:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:01:56.6959319+07:00 0HLB4QOBDIHPK:00000004 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" in 218.8542ms (afa2e885)
+2018-01-26T23:01:56.6961491+07:00 0HLB4QOBDIHPK:00000004 [INF] Request finished in 224.2116ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:01:56.7182239+07:00 0HLB4QOBDIHPO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/bootstrap.min.css   (ca22a1cb)
+2018-01-26T23:01:56.7185680+07:00 0HLB4QOBDIHPO:00000002 [INF] Sending file. Request path: '"/admin-side/css/bootstrap.min.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\bootstrap.min.css"' (27b0a520)
+2018-01-26T23:01:56.7207030+07:00 0HLB4QOBDIHPN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/material-dashboard.css?v=1.2.1   (ca22a1cb)
+2018-01-26T23:01:56.7210487+07:00 0HLB4QOBDIHPN:00000002 [INF] Sending file. Request path: '"/admin-side/css/material-dashboard.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\material-dashboard.css"' (27b0a520)
+2018-01-26T23:01:56.7224282+07:00 0HLB4QOBDIHPM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/demo.css   (ca22a1cb)
+2018-01-26T23:01:56.7228268+07:00 0HLB4QOBDIHPM:00000002 [INF] Sending file. Request path: '"/admin-side/css/demo.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\demo.css"' (27b0a520)
+2018-01-26T23:01:56.7238560+07:00 0HLB4QOBDIHPQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/notify-metro.css   (ca22a1cb)
+2018-01-26T23:01:56.7239922+07:00 0HLB4QOBDIHPL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery-3.2.1.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7241996+07:00 0HLB4QOBDIHPL:00000003 [INF] Sending file. Request path: '"/admin-side/js/jquery-3.2.1.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery-3.2.1.min.js"' (27b0a520)
+2018-01-26T23:01:56.7242020+07:00 0HLB4QOBDIHPQ:00000002 [INF] Sending file. Request path: '"/admin-side/css/notify-metro.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\notify-metro.css"' (27b0a520)
+2018-01-26T23:01:56.7268300+07:00 0HLB4QOBDIHPP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7271851+07:00 0HLB4QOBDIHPP:00000002 [INF] Sending file. Request path: '"/admin-side/js/bootstrap.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap.min.js"' (27b0a520)
+2018-01-26T23:01:56.7273550+07:00 0HLB4QOBDIHPK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.bootstrap-wizard.js   (ca22a1cb)
+2018-01-26T23:01:56.7275525+07:00 0HLB4QOBDIHPK:00000005 [INF] Sending file. Request path: '"/admin-side/js/jquery.bootstrap-wizard.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.bootstrap-wizard.js"' (27b0a520)
+2018-01-26T23:01:56.7279160+07:00 0HLB4QOBDIHPO:00000002 [INF] Request finished in 10.1092ms 200 text/css (791a596a)
+2018-01-26T23:01:56.7282870+07:00 0HLB4QOBDIHPK:00000005 [INF] Request finished in 1.0145ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.7303258+07:00 0HLB4QOBDIHPT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.validate.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7307213+07:00 0HLB4QOBDIHPT:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.validate.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.validate.min.js"' (27b0a520)
+2018-01-26T23:01:56.7319180+07:00 0HLB4QOBDIHPR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap-notify.js   (ca22a1cb)
+2018-01-26T23:01:56.7328602+07:00 0HLB4QOBDIHPR:00000001 [INF] Sending file. Request path: '"/admin-side/js/bootstrap-notify.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap-notify.js"' (27b0a520)
+2018-01-26T23:01:56.7335958+07:00 0HLB4QOBDIHPS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/perfect-scrollbar.jquery.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7336013+07:00 0HLB4QOBDIHPV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/arrive.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7339727+07:00 0HLB4QOBDIHPS:00000001 [INF] Sending file. Request path: '"/admin-side/js/perfect-scrollbar.jquery.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\perfect-scrollbar.jquery.min.js"' (27b0a520)
+2018-01-26T23:01:56.7341536+07:00 0HLB4QOBDIHPV:00000001 [INF] Sending file. Request path: '"/admin-side/js/arrive.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\arrive.min.js"' (27b0a520)
+2018-01-26T23:01:56.7585858+07:00 0HLB4QOBDIHPR:00000001 [INF] Request finished in 26.7903ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.7589240+07:00 0HLB4QOBDIHQ0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap-datetimepicker.js   (ca22a1cb)
+2018-01-26T23:01:56.7592294+07:00 0HLB4QOBDIHQ0:00000001 [INF] Sending file. Request path: '"/admin-side/js/bootstrap-datetimepicker.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap-datetimepicker.js"' (27b0a520)
+2018-01-26T23:01:56.7594408+07:00 0HLB4QOBDIHPU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/moment.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7596644+07:00 0HLB4QOBDIHQ3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery-jvectormap.js   (ca22a1cb)
+2018-01-26T23:01:56.7598643+07:00 0HLB4QOBDIHQ3:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery-jvectormap.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery-jvectormap.js"' (27b0a520)
+2018-01-26T23:01:56.7599176+07:00 0HLB4QOBDIHPU:00000001 [INF] Sending file. Request path: '"/admin-side/js/moment.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\moment.min.js"' (27b0a520)
+2018-01-26T23:01:56.7602162+07:00 0HLB4QOBDIHQ2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.select-bootstrap.js   (ca22a1cb)
+2018-01-26T23:01:56.7604256+07:00 0HLB4QOBDIHQ2:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.select-bootstrap.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.select-bootstrap.js"' (27b0a520)
+2018-01-26T23:01:56.7608602+07:00 0HLB4QOBDIHQ6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/sweetalert2.js   (ca22a1cb)
+2018-01-26T23:01:56.7610656+07:00 0HLB4QOBDIHQ6:00000001 [INF] Sending file. Request path: '"/admin-side/js/sweetalert2.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\sweetalert2.js"' (27b0a520)
+2018-01-26T23:01:56.7614358+07:00 0HLB4QOBDIHQ1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/material.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7616961+07:00 0HLB4QOBDIHQ1:00000001 [INF] Sending file. Request path: '"/admin-side/js/material.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\material.min.js"' (27b0a520)
+2018-01-26T23:01:56.7858083+07:00 0HLB4QOBDIHQ5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jasny-bootstrap.min.js   (ca22a1cb)
+2018-01-26T23:01:56.7863982+07:00 0HLB4QOBDIHQ5:00000001 [INF] Sending file. Request path: '"/admin-side/js/jasny-bootstrap.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jasny-bootstrap.min.js"' (27b0a520)
+2018-01-26T23:01:56.8000930+07:00 0HLB4QOBDIHQ4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.datatables.js   (ca22a1cb)
+2018-01-26T23:01:56.8003580+07:00 0HLB4QOBDIHQ4:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.datatables.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.datatables.js"' (27b0a520)
+2018-01-26T23:01:56.8007211+07:00 0HLB4QOBDIHQ7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/nouislider.min.js   (ca22a1cb)
+2018-01-26T23:01:56.8009688+07:00 0HLB4QOBDIHQ7:00000001 [INF] Sending file. Request path: '"/admin-side/js/nouislider.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\nouislider.min.js"' (27b0a520)
+2018-01-26T23:01:56.8021437+07:00 0HLB4QOBDIHPV:00000001 [INF] Request finished in 68.6486ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8029275+07:00 0HLB4QOBDIHQ8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.tagsinput.js   (ca22a1cb)
+2018-01-26T23:01:56.8033001+07:00 0HLB4QOBDIHQ8:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.tagsinput.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.tagsinput.js"' (27b0a520)
+2018-01-26T23:01:56.8038915+07:00 0HLB4QOBDIHQ8:00000001 [INF] Request finished in 0.6806ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8045489+07:00 0HLB4QOBDIHQ9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/material-dashboard.js?v=1.2.1   (ca22a1cb)
+2018-01-26T23:01:56.8048014+07:00 0HLB4QOBDIHQ9:00000001 [INF] Sending file. Request path: '"/admin-side/js/material-dashboard.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\material-dashboard.js"' (27b0a520)
+2018-01-26T23:01:56.8050455+07:00 0HLB4QOBDIHQ9:00000001 [INF] Request finished in 0.5503ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8052260+07:00 0HLB4QOBDIHQB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/notify.min.js   (ca22a1cb)
+2018-01-26T23:01:56.8053990+07:00 0HLB4QOBDIHQB:00000001 [INF] Sending file. Request path: '"/admin-side/js/notify.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\notify.min.js"' (27b0a520)
+2018-01-26T23:01:56.8119432+07:00 0HLB4QOBDIHQA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/chartist.min.js   (ca22a1cb)
+2018-01-26T23:01:56.8123569+07:00 0HLB4QOBDIHQA:00000001 [INF] Sending file. Request path: '"/admin-side/js/chartist.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\chartist.min.js"' (27b0a520)
+2018-01-26T23:01:56.8214350+07:00 0HLB4QOBDIHQD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/notify-metro.js   (ca22a1cb)
+2018-01-26T23:01:56.8221418+07:00 0HLB4QOBDIHQD:00000001 [INF] Sending file. Request path: '"/admin-side/js/notify-metro.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\notify-metro.js"' (27b0a520)
+2018-01-26T23:01:56.8230485+07:00 0HLB4QOBDIHQC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-01-26T23:01:56.8237650+07:00 0HLB4QOBDIHQC:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-01-26T23:01:56.8356157+07:00 0HLB4QOBDIHQF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-01-26T23:01:56.8358986+07:00 0HLB4QOBDIHQF:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-01-26T23:01:56.8474909+07:00 0HLB4QOBDIHPK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-01-26T23:01:56.8482530+07:00 0HLB4QOBDIHPK:00000006 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-01-26T23:01:56.8536064+07:00 0HLB4QOBDIHQE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/demo.js   (ca22a1cb)
+2018-01-26T23:01:56.8539402+07:00 0HLB4QOBDIHQE:00000001 [INF] Sending file. Request path: '"/admin-side/js/demo.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\demo.js"' (27b0a520)
+2018-01-26T23:01:56.8543069+07:00 0HLB4QOBDIHQE:00000001 [INF] Request finished in 0.7514ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8545001+07:00 0HLB4QOBDIHQG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-01-26T23:01:56.8546526+07:00 0HLB4QOBDIHQG:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-01-26T23:01:56.8548505+07:00 0HLB4QOBDIHQG:00000001 [INF] Request finished in 0.3725ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8550156+07:00 0HLB4QOBDIHQH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/controllers/login/index.js   (ca22a1cb)
+2018-01-26T23:01:56.8551539+07:00 0HLB4QOBDIHQH:00000001 [INF] Sending file. Request path: '"/admin-side/custom/controllers/login/index.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\custom\controllers\login\index.js"' (27b0a520)
+2018-01-26T23:01:56.8553407+07:00 0HLB4QOBDIHQH:00000001 [INF] Request finished in 0.3369ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8555031+07:00 0HLB4QOBDIHQI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/shared/app.js   (ca22a1cb)
+2018-01-26T23:01:56.8556477+07:00 0HLB4QOBDIHQI:00000001 [INF] Sending file. Request path: '"/admin-side/custom/shared/app.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\custom\shared\app.js"' (27b0a520)
+2018-01-26T23:01:56.8558333+07:00 0HLB4QOBDIHQI:00000001 [INF] Request finished in 0.3401ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8559957+07:00 0HLB4QOBDIHQJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/fullcalendar.min.js   (ca22a1cb)
+2018-01-26T23:01:56.8561529+07:00 0HLB4QOBDIHQJ:00000001 [INF] Sending file. Request path: '"/admin-side/js/fullcalendar.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\fullcalendar.min.js"' (27b0a520)
+2018-01-26T23:01:56.8592538+07:00 0HLB4QOBDIHPM:00000002 [INF] Request finished in 136.7454ms 200 text/css (791a596a)
+2018-01-26T23:01:56.8597963+07:00 0HLB4QOBDIHQ6:00000001 [INF] Request finished in 98.9285ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8599725+07:00 0HLB4QOBDIHPP:00000002 [INF] Request finished in 133.272ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8601174+07:00 0HLB4QOBDIHQ1:00000001 [INF] Request finished in 98.7412ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8615254+07:00 0HLB4QOBDIHPQ:00000002 [INF] Request finished in 137.7216ms 200 text/css (791a596a)
+2018-01-26T23:01:56.8617190+07:00 0HLB4QOBDIHQD:00000001 [INF] Request finished in 40.8228ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8618822+07:00 0HLB4QOBDIHQ7:00000001 [INF] Request finished in 61.1887ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8620311+07:00 0HLB4QOBDIHPS:00000001 [INF] Request finished in 128.6091ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8621955+07:00 0HLB4QOBDIHPU:00000001 [INF] Request finished in 103.6076ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8623495+07:00 0HLB4QOBDIHQC:00000001 [INF] Request finished in 39.7977ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8625755+07:00 0HLB4QOBDIHQ5:00000001 [INF] Request finished in 77.0579ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8641325+07:00 0HLB4QOBDIHPT:00000001 [INF] Request finished in 130.2549ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8694887+07:00 0HLB4QOBDIHQ0:00000001 [INF] Request finished in 110.6093ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8746364+07:00 0HLB4QOBDIHQ2:00000001 [INF] Request finished in 113.9357ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8752523+07:00 0HLB4QOBDIHPL:00000003 [INF] Request finished in 150.9016ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8787430+07:00 0HLB4QOBDIHQ3:00000001 [INF] Request finished in 119.0399ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8844833+07:00 0HLB4QOBDIHQB:00000001 [INF] Request finished in 79.1912ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8966938+07:00 0HLB4QOBDIHQA:00000001 [INF] Request finished in 86.0677ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.8979327+07:00 0HLB4QOBDIHPN:00000002 [INF] Request finished in 177.3356ms 200 text/css (791a596a)
+2018-01-26T23:01:56.9097996+07:00 0HLB4QOBDIHPK:00000006 [INF] Request finished in 62.2933ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.9203114+07:00 0HLB4QOBDIHQF:00000001 [INF] Request finished in 84.6767ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.9413054+07:00 0HLB4QOBDIHQJ:00000001 [INF] Request finished in 85.244ms 200 application/javascript (791a596a)
+2018-01-26T23:01:56.9478562+07:00 0HLB4QOBDIHQ4:00000001 [INF] Request finished in 147.3271ms 200 application/javascript (791a596a)
+2018-01-26T23:01:57.6191223+07:00 0HLB4QOBDIHPO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/login.jpeg   (ca22a1cb)
+2018-01-26T23:01:57.6310477+07:00 0HLB4QOBDIHPO:00000003 [INF] Sending file. Request path: '"/admin-side/img/login.jpeg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\login.jpeg"' (27b0a520)
+2018-01-26T23:01:57.6598706+07:00 0HLB4QOBDIHPO:00000003 [INF] Request finished in 40.7296ms 200 image/jpeg (791a596a)
+2018-01-26T23:01:59.9424277+07:00 0HLB4QOBDIHPR:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44335/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-01-26T23:02:00.0225304+07:00 0HLB4QOBDIHPR:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" with arguments (["NetCore_Shop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:02:00.0297336+07:00 0HLB4QOBDIHPR:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:02:00.1117033+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed DbCommand ("43"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-01-26T23:02:00.2050291+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:02:00.2385260+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:02:00.2505635+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:02:00.2748488+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:02:00.2789428+07:00 0HLB4QOBDIHPR:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-01-26T23:02:00.2792730+07:00 0HLB4QOBDIHPR:00000002 [INF] User logged in. (fdce0db4)
+2018-01-26T23:02:00.2836203+07:00 0HLB4QOBDIHPR:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-26T23:02:00.3358779+07:00 0HLB4QOBDIHPR:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" in 354.595ms (afa2e885)
+2018-01-26T23:02:00.3370828+07:00 0HLB4QOBDIHPR:00000002 [INF] Request finished in 394.7407ms 200 application/json; charset=utf-8 (791a596a)
+2018-01-26T23:02:00.3485964+07:00 0HLB4QOBDIHPV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:02:00.3532989+07:00 0HLB4QOBDIHPV:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:02:00.3561180+07:00 0HLB4QOBDIHPV:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:02:00.5774730+07:00 0HLB4QOBDIHPV:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:02:00.8935547+07:00 0HLB4QOBDIHPV:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" in 537.6768ms (afa2e885)
+2018-01-26T23:02:00.8937135+07:00 0HLB4QOBDIHPV:00000002 [INF] Request finished in 545.1991ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:02:00.9252947+07:00 0HLB4QOBDIHQ8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootbox.min.js   (ca22a1cb)
+2018-01-26T23:02:00.9255776+07:00 0HLB4QOBDIHQ8:00000002 [INF] Sending file. Request path: '"/admin-side/js/bootbox.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootbox.min.js"' (27b0a520)
+2018-01-26T23:02:00.9262871+07:00 0HLB4QOBDIHQ9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/RO.png   (ca22a1cb)
+2018-01-26T23:02:00.9273841+07:00 0HLB4QOBDIHQG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/AU.png   (ca22a1cb)
+2018-01-26T23:02:00.9278575+07:00 0HLB4QOBDIHQI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/GB.png   (ca22a1cb)
+2018-01-26T23:02:00.9279088+07:00 0HLB4QOBDIHQH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/faces/avatar.jpg   (ca22a1cb)
+2018-01-26T23:02:00.9281308+07:00 0HLB4QOBDIHQ7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/BR.png   (ca22a1cb)
+2018-01-26T23:02:00.9281609+07:00 0HLB4QOBDIHQD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/US.png   (ca22a1cb)
+2018-01-26T23:02:00.9282478+07:00 0HLB4QOBDIHQH:00000002 [INF] Sending file. Request path: '"/admin-side/img/faces/avatar.jpg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\faces\avatar.jpg"' (27b0a520)
+2018-01-26T23:02:00.9290514+07:00 0HLB4QOBDIHQE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/card-1.jpeg   (ca22a1cb)
+2018-01-26T23:02:00.9404260+07:00 0HLB4QOBDIHQ9:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/RO.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\RO.png"' (27b0a520)
+2018-01-26T23:02:00.9416933+07:00 0HLB4QOBDIHQD:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/US.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\US.png"' (27b0a520)
+2018-01-26T23:02:00.9416933+07:00 0HLB4QOBDIHQG:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/AU.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\AU.png"' (27b0a520)
+2018-01-26T23:02:00.9417036+07:00 0HLB4QOBDIHQI:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/GB.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\GB.png"' (27b0a520)
+2018-01-26T23:02:00.9418398+07:00 0HLB4QOBDIHQ7:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/BR.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\BR.png"' (27b0a520)
+2018-01-26T23:02:00.9418971+07:00 0HLB4QOBDIHQE:00000002 [INF] Sending file. Request path: '"/admin-side/img/card-1.jpeg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\card-1.jpeg"' (27b0a520)
+2018-01-26T23:02:00.9652706+07:00 0HLB4QOBDIHPM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/card-2.jpeg   (ca22a1cb)
+2018-01-26T23:02:00.9657396+07:00 0HLB4QOBDIHPM:00000003 [INF] Sending file. Request path: '"/admin-side/img/card-2.jpeg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\card-2.jpeg"' (27b0a520)
+2018-01-26T23:02:00.9676655+07:00 0HLB4QOBDIHQ1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/flags/DE.png   (ca22a1cb)
+2018-01-26T23:02:00.9701409+07:00 0HLB4QOBDIHQ1:00000002 [INF] Sending file. Request path: '"/admin-side/img/flags/DE.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\flags\DE.png"' (27b0a520)
+2018-01-26T23:02:00.9721411+07:00 0HLB4QOBDIHPQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/card-3.jpeg   (ca22a1cb)
+2018-01-26T23:02:00.9729265+07:00 0HLB4QOBDIHQ7:00000002 [INF] Request finished in 44.5139ms 200 image/png (791a596a)
+2018-01-26T23:02:00.9732070+07:00 0HLB4QOBDIHQ9:00000002 [INF] Request finished in 46.9625ms 200 image/png (791a596a)
+2018-01-26T23:02:00.9735309+07:00 0HLB4QOBDIHQI:00000002 [INF] Request finished in 45.8927ms 200 image/png (791a596a)
+2018-01-26T23:02:00.9737210+07:00 0HLB4QOBDIHQ8:00000002 [INF] Request finished in 48.5238ms 200 application/javascript (791a596a)
+2018-01-26T23:02:00.9748844+07:00 0HLB4QOBDIHPQ:00000003 [INF] Sending file. Request path: '"/admin-side/img/card-3.jpeg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\card-3.jpeg"' (27b0a520)
+2018-01-26T23:02:00.9789887+07:00 0HLB4QOBDIHQD:00000002 [INF] Request finished in 50.0349ms 200 image/png (791a596a)
+2018-01-26T23:02:00.9838026+07:00 0HLB4QOBDIHQG:00000002 [INF] Request finished in 56.5131ms 200 image/png (791a596a)
+2018-01-26T23:02:00.9915588+07:00 0HLB4QOBDIHPQ:00000003 [INF] Request finished in 19.4326ms 200 image/jpeg (791a596a)
+2018-01-26T23:02:01.0201344+07:00 0HLB4QOBDIHPM:00000003 [INF] Request finished in 54.8309ms 200 image/jpeg (791a596a)
+2018-01-26T23:02:01.0207672+07:00 0HLB4QOBDIHQH:00000002 [INF] Request finished in 92.8232ms 200 image/jpeg (791a596a)
+2018-01-26T23:02:01.0288387+07:00 0HLB4QOBDIHQ1:00000002 [INF] Request finished in 61.1677ms 200 image/png (791a596a)
+2018-01-26T23:02:01.0383139+07:00 0HLB4QOBDIHQE:00000002 [INF] Request finished in 109.4162ms 200 image/jpeg (791a596a)
+2018-01-26T23:02:01.7598030+07:00 0HLB4QOBDIHPT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/sidebar-1.jpg   (ca22a1cb)
+2018-01-26T23:02:01.7602676+07:00 0HLB4QOBDIHPT:00000002 [INF] Sending file. Request path: '"/admin-side/img/sidebar-1.jpg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\sidebar-1.jpg"' (27b0a520)
+2018-01-26T23:02:01.7982686+07:00 0HLB4QOBDIHPT:00000002 [INF] Request finished in 38.4236ms 200 image/jpeg (791a596a)
+2018-01-26T23:02:46.0703807+07:00 0HLB4QOBDIHQB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index?   (ca22a1cb)
+2018-01-26T23:02:46.0715335+07:00 0HLB4QOBDIHQB:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:02:46.0720367+07:00 0HLB4QOBDIHQB:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:02:46.0723579+07:00 0HLB4QOBDIHQB:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:02:46.0740875+07:00 0HLB4QOBDIHQB:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" in 2.0499ms (afa2e885)
+2018-01-26T23:02:46.0743218+07:00 0HLB4QOBDIHQB:00000002 [INF] Request finished in 4.1805ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:03:22.6176540+07:00 0HLB4QOBDIHQB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index?   (ca22a1cb)
+2018-01-26T23:03:22.6186684+07:00 0HLB4QOBDIHQB:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:03:22.6189596+07:00 0HLB4QOBDIHQB:00000003 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:03:22.6191299+07:00 0HLB4QOBDIHQB:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:03:22.6200476+07:00 0HLB4QOBDIHQB:00000003 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" in 1.1006ms (afa2e885)
+2018-01-26T23:03:22.6202021+07:00 0HLB4QOBDIHQB:00000003 [INF] Request finished in 2.6654ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:03:23.1388590+07:00 0HLB4QOBDIHQB:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/favicon.png   (ca22a1cb)
+2018-01-26T23:03:23.1391589+07:00 0HLB4QOBDIHQB:00000004 [INF] Sending file. Request path: '"/admin-side/img/favicon.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\favicon.png"' (27b0a520)
+2018-01-26T23:03:23.1542926+07:00 0HLB4QOBDIHQB:00000004 [INF] Request finished in 15.0237ms 200 image/png (791a596a)
+2018-01-26T23:03:44.3968687+07:00 0HLB4QOBDIHQB:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index?   (ca22a1cb)
+2018-01-26T23:03:44.3979531+07:00 0HLB4QOBDIHQB:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:03:44.3983806+07:00 0HLB4QOBDIHQB:00000005 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:03:44.3986291+07:00 0HLB4QOBDIHQB:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:03:44.6453971+07:00 0HLB4QOBDIHQB:00000005 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" in 247.0367ms (afa2e885)
+2018-01-26T23:03:44.6455386+07:00 0HLB4QOBDIHQB:00000005 [INF] Request finished in 248.8394ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:03:45.1223877+07:00 0HLB4QOBDIHQB:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/favicon.png   (ca22a1cb)
+2018-01-26T23:03:45.1226611+07:00 0HLB4QOBDIHQB:00000006 [INF] Sending file. Request path: '"/admin-side/img/favicon.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\favicon.png"' (27b0a520)
+2018-01-26T23:03:45.1246452+07:00 0HLB4QOBDIHQB:00000006 [INF] Request finished in 2.2696ms 200 image/png (791a596a)
+2018-01-26T23:03:50.8793171+07:00 0HLB4QOBDIHQB:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:03:50.8799388+07:00 0HLB4QOBDIHQB:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:03:50.8801676+07:00 0HLB4QOBDIHQB:00000007 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:03:51.1589902+07:00 0HLB4QOBDIHQB:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:03:51.2279557+07:00 0HLB4QOBDIHQB:00000007 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" in 347.7142ms (afa2e885)
+2018-01-26T23:03:51.2281545+07:00 0HLB4QOBDIHQB:00000007 [INF] Request finished in 348.8899ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:04:01.4402488+07:00 0HLB4QOBDIHQB:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:04:01.4413585+07:00 0HLB4QOBDIHQB:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:04:01.4419195+07:00 0HLB4QOBDIHQB:00000008 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:04:01.6997244+07:00 0HLB4QOBDIHQB:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:04:01.7627190+07:00 0HLB4QOBDIHQB:00000008 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" in 320.8579ms (afa2e885)
+2018-01-26T23:04:01.7628833+07:00 0HLB4QOBDIHQB:00000008 [INF] Request finished in 322.7779ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:04:02.0217529+07:00 0HLB4QOBDIHQB:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/favicon.png   (ca22a1cb)
+2018-01-26T23:04:02.0220259+07:00 0HLB4QOBDIHQB:00000009 [INF] Sending file. Request path: '"/admin-side/img/favicon.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\favicon.png"' (27b0a520)
+2018-01-26T23:04:02.0223257+07:00 0HLB4QOBDIHQB:00000009 [INF] Request finished in 0.6806ms 200 image/png (791a596a)
+2018-01-26T23:04:28.3284788+07:00 0HLB4QOBDIHQB:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:04:28.3298038+07:00 0HLB4QOBDIHQB:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:04:28.3303750+07:00 0HLB4QOBDIHQB:0000000A [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:04:28.5145649+07:00 0HLB4QOBDIHQB:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:04:28.5725067+07:00 0HLB4QOBDIHQB:0000000A [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" in 242.2505ms (afa2e885)
+2018-01-26T23:04:28.5726303+07:00 0HLB4QOBDIHQB:0000000A [INF] Request finished in 244.4783ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:04:28.8425384+07:00 0HLB4QOBDIHQB:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/favicon.png   (ca22a1cb)
+2018-01-26T23:04:28.8428248+07:00 0HLB4QOBDIHQB:0000000B [INF] Sending file. Request path: '"/admin-side/img/favicon.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\favicon.png"' (27b0a520)
+2018-01-26T23:04:28.8431970+07:00 0HLB4QOBDIHQB:0000000B [INF] Request finished in 0.7312ms 200 image/png (791a596a)
+2018-01-26T23:06:19.0386430+07:00 0HLB4QOBDIHQK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:06:19.0397839+07:00 0HLB4QOBDIHQK:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:06:19.0401186+07:00 0HLB4QOBDIHQK:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:06:19.0402592+07:00 0HLB4QOBDIHQK:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:06:19.0412887+07:00 0HLB4QOBDIHQK:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore-Shop)" in 1.1729ms (afa2e885)
+2018-01-26T23:06:19.0414215+07:00 0HLB4QOBDIHQK:00000001 [INF] Request finished in 2.9601ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:06:19.0688522+07:00 0HLB4QOBDIHQK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/material-dashboard.css?v=1.2.1   (ca22a1cb)
+2018-01-26T23:06:19.0691489+07:00 0HLB4QOBDIHQK:00000002 [INF] Sending file. Request path: '"/admin-side/css/material-dashboard.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\material-dashboard.css"' (27b0a520)
+2018-01-26T23:06:19.0699493+07:00 0HLB4QOBDIHQM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/demo.css   (ca22a1cb)
+2018-01-26T23:06:19.0700010+07:00 0HLB4QOBDIHQL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/bootstrap.min.css   (ca22a1cb)
+2018-01-26T23:06:19.0701618+07:00 0HLB4QOBDIHQM:00000001 [INF] Sending file. Request path: '"/admin-side/css/demo.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\demo.css"' (27b0a520)
+2018-01-26T23:06:19.0701978+07:00 0HLB4QOBDIHQL:00000001 [INF] Sending file. Request path: '"/admin-side/css/bootstrap.min.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\bootstrap.min.css"' (27b0a520)
+2018-01-26T23:06:19.0747319+07:00 0HLB4QOBDIHQN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/css/notify-metro.css   (ca22a1cb)
+2018-01-26T23:06:19.0750424+07:00 0HLB4QOBDIHQN:00000001 [INF] Sending file. Request path: '"/admin-side/css/notify-metro.css"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\css\notify-metro.css"' (27b0a520)
+2018-01-26T23:06:19.0766298+07:00 0HLB4QOBDIHQM:00000001 [INF] Request finished in 6.6725ms 200 text/css (791a596a)
+2018-01-26T23:06:19.0768771+07:00 0HLB4QOBDIHQO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery-3.2.1.min.js   (ca22a1cb)
+2018-01-26T23:06:19.0770884+07:00 0HLB4QOBDIHQO:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery-3.2.1.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery-3.2.1.min.js"' (27b0a520)
+2018-01-26T23:06:19.0812773+07:00 0HLB4QOBDIHQL:00000001 [INF] Request finished in 11.2553ms 200 text/css (791a596a)
+2018-01-26T23:06:19.0832668+07:00 0HLB4QOBDIHQK:00000002 [INF] Request finished in 14.4952ms 200 text/css (791a596a)
+2018-01-26T23:06:19.0836002+07:00 0HLB4QOBDIHQM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/material.min.js   (ca22a1cb)
+2018-01-26T23:06:19.0838333+07:00 0HLB4QOBDIHQM:00000002 [INF] Sending file. Request path: '"/admin-side/js/material.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\material.min.js"' (27b0a520)
+2018-01-26T23:06:19.0844646+07:00 0HLB4QOBDIHQN:00000001 [INF] Request finished in 10.4031ms 200 text/css (791a596a)
+2018-01-26T23:06:19.0867413+07:00 0HLB4QOBDIHQP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap.min.js   (ca22a1cb)
+2018-01-26T23:06:19.0868191+07:00 0HLB4QOBDIHQN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/perfect-scrollbar.jquery.min.js   (ca22a1cb)
+2018-01-26T23:06:19.0870357+07:00 0HLB4QOBDIHQN:00000002 [INF] Sending file. Request path: '"/admin-side/js/perfect-scrollbar.jquery.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\perfect-scrollbar.jquery.min.js"' (27b0a520)
+2018-01-26T23:06:19.0880036+07:00 0HLB4QOBDIHQQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/arrive.min.js   (ca22a1cb)
+2018-01-26T23:06:19.0882272+07:00 0HLB4QOBDIHQQ:00000001 [INF] Sending file. Request path: '"/admin-side/js/arrive.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\arrive.min.js"' (27b0a520)
+2018-01-26T23:06:19.0969643+07:00 0HLB4QOBDIHQP:00000001 [INF] Sending file. Request path: '"/admin-side/js/bootstrap.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap.min.js"' (27b0a520)
+2018-01-26T23:06:19.1020073+07:00 0HLB4QOBDIHQR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/nouislider.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1027457+07:00 0HLB4QOBDIHQR:00000001 [INF] Sending file. Request path: '"/admin-side/js/nouislider.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\nouislider.min.js"' (27b0a520)
+2018-01-26T23:06:19.1066157+07:00 0HLB4QOBDIHQS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/chartist.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1066157+07:00 0HLB4QOBDIHQT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.validate.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1069274+07:00 0HLB4QOBDIHQT:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.validate.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.validate.min.js"' (27b0a520)
+2018-01-26T23:06:19.1070613+07:00 0HLB4QOBDIHQS:00000001 [INF] Sending file. Request path: '"/admin-side/js/chartist.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\chartist.min.js"' (27b0a520)
+2018-01-26T23:06:19.1199229+07:00 0HLB4QOBDIHQU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/moment.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1201490+07:00 0HLB4QOBDIHQU:00000001 [INF] Sending file. Request path: '"/admin-side/js/moment.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\moment.min.js"' (27b0a520)
+2018-01-26T23:06:19.1216182+07:00 0HLB4QOBDIHQV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery-jvectormap.js   (ca22a1cb)
+2018-01-26T23:06:19.1218426+07:00 0HLB4QOBDIHQV:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery-jvectormap.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery-jvectormap.js"' (27b0a520)
+2018-01-26T23:06:19.1425647+07:00 0HLB4QOBDIHQM:00000002 [INF] Request finished in 58.9585ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1428239+07:00 0HLB4QOBDIHR0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.select-bootstrap.js   (ca22a1cb)
+2018-01-26T23:06:19.1430404+07:00 0HLB4QOBDIHR0:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.select-bootstrap.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.select-bootstrap.js"' (27b0a520)
+2018-01-26T23:06:19.1444919+07:00 0HLB4QOBDIHQQ:00000001 [INF] Request finished in 56.4957ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1447458+07:00 0HLB4QOBDIHQS:00000001 [INF] Request finished in 38.2ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1472111+07:00 0HLB4QOBDIHQT:00000001 [INF] Request finished in 39.9873ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1478447+07:00 0HLB4QOBDIHQR:00000001 [INF] Request finished in 45.8891ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1485981+07:00 0HLB4QOBDIHR1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap-notify.js   (ca22a1cb)
+2018-01-26T23:06:19.1493942+07:00 0HLB4QOBDIHR1:00000001 [INF] Sending file. Request path: '"/admin-side/js/bootstrap-notify.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap-notify.js"' (27b0a520)
+2018-01-26T23:06:19.1518546+07:00 0HLB4QOBDIHQP:00000001 [INF] Request finished in 65.1231ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1526929+07:00 0HLB4QOBDIHR3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/bootstrap-datetimepicker.js   (ca22a1cb)
+2018-01-26T23:06:19.1529647+07:00 0HLB4QOBDIHR3:00000001 [INF] Sending file. Request path: '"/admin-side/js/bootstrap-datetimepicker.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\bootstrap-datetimepicker.js"' (27b0a520)
+2018-01-26T23:06:19.1553114+07:00 0HLB4QOBDIHR2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.bootstrap-wizard.js   (ca22a1cb)
+2018-01-26T23:06:19.1556519+07:00 0HLB4QOBDIHR2:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.bootstrap-wizard.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.bootstrap-wizard.js"' (27b0a520)
+2018-01-26T23:06:19.1559703+07:00 0HLB4QOBDIHQO:00000001 [INF] Request finished in 79.0905ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1584047+07:00 0HLB4QOBDIHR4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.datatables.js   (ca22a1cb)
+2018-01-26T23:06:19.1589400+07:00 0HLB4QOBDIHR5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jasny-bootstrap.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1589483+07:00 0HLB4QOBDIHR4:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.datatables.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.datatables.js"' (27b0a520)
+2018-01-26T23:06:19.1591024+07:00 0HLB4QOBDIHR5:00000001 [INF] Sending file. Request path: '"/admin-side/js/jasny-bootstrap.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jasny-bootstrap.min.js"' (27b0a520)
+2018-01-26T23:06:19.1702372+07:00 0HLB4QOBDIHQU:00000001 [INF] Request finished in 50.3268ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1727882+07:00 0HLB4QOBDIHQV:00000001 [INF] Request finished in 51.1853ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1738184+07:00 0HLB4QOBDIHR1:00000001 [INF] Request finished in 25.2203ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1753825+07:00 0HLB4QOBDIHR7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/jquery.tagsinput.js   (ca22a1cb)
+2018-01-26T23:06:19.1756136+07:00 0HLB4QOBDIHR7:00000001 [INF] Sending file. Request path: '"/admin-side/js/jquery.tagsinput.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\jquery.tagsinput.js"' (27b0a520)
+2018-01-26T23:06:19.1759454+07:00 0HLB4QOBDIHR6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/sweetalert2.js   (ca22a1cb)
+2018-01-26T23:06:19.1761445+07:00 0HLB4QOBDIHR6:00000001 [INF] Sending file. Request path: '"/admin-side/js/sweetalert2.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\sweetalert2.js"' (27b0a520)
+2018-01-26T23:06:19.1780618+07:00 0HLB4QOBDIHR2:00000001 [INF] Request finished in 22.7638ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1809209+07:00 0HLB4QOBDIHR0:00000001 [INF] Request finished in 38.0503ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1818152+07:00 0HLB4QOBDIHR8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/fullcalendar.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1820424+07:00 0HLB4QOBDIHR8:00000001 [INF] Sending file. Request path: '"/admin-side/js/fullcalendar.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\fullcalendar.min.js"' (27b0a520)
+2018-01-26T23:06:19.1865931+07:00 0HLB4QOBDIHQN:00000002 [INF] Request finished in 99.6768ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1881706+07:00 0HLB4QOBDIHR3:00000001 [INF] Request finished in 35.3493ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.1896608+07:00 0HLB4QOBDIHR9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/material-dashboard.js?v=1.2.1   (ca22a1cb)
+2018-01-26T23:06:19.1898761+07:00 0HLB4QOBDIHR9:00000001 [INF] Sending file. Request path: '"/admin-side/js/material-dashboard.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\material-dashboard.js"' (27b0a520)
+2018-01-26T23:06:19.1923290+07:00 0HLB4QOBDIHRA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/demo.js   (ca22a1cb)
+2018-01-26T23:06:19.1923290+07:00 0HLB4QOBDIHRC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/notify.min.js   (ca22a1cb)
+2018-01-26T23:06:19.1925388+07:00 0HLB4QOBDIHRA:00000001 [INF] Sending file. Request path: '"/admin-side/js/demo.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\demo.js"' (27b0a520)
+2018-01-26T23:06:19.1926466+07:00 0HLB4QOBDIHRC:00000001 [INF] Sending file. Request path: '"/admin-side/js/notify.min.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\notify.min.js"' (27b0a520)
+2018-01-26T23:06:19.2127526+07:00 0HLB4QOBDIHRA:00000001 [INF] Request finished in 20.4294ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2130034+07:00 0HLB4QOBDIHRB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/notify-metro.js   (ca22a1cb)
+2018-01-26T23:06:19.2131848+07:00 0HLB4QOBDIHRB:00000001 [INF] Sending file. Request path: '"/admin-side/js/notify-metro.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\js\notify-metro.js"' (27b0a520)
+2018-01-26T23:06:19.2146050+07:00 0HLB4QOBDIHQM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-01-26T23:06:19.2148701+07:00 0HLB4QOBDIHQM:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-01-26T23:06:19.2214712+07:00 0HLB4QOBDIHRB:00000001 [INF] Request finished in 8.4065ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2214712+07:00 0HLB4QOBDIHR9:00000001 [INF] Request finished in 31.9351ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2216810+07:00 0HLB4QOBDIHR7:00000001 [INF] Request finished in 46.3897ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2225410+07:00 0HLB4QOBDIHR6:00000001 [INF] Request finished in 46.4256ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2247284+07:00 0HLB4QOBDIHQQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-01-26T23:06:19.2251808+07:00 0HLB4QOBDIHQQ:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-01-26T23:06:19.2353991+07:00 0HLB4QOBDIHQN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-01-26T23:06:19.2356270+07:00 0HLB4QOBDIHQN:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-01-26T23:06:19.2404768+07:00 0HLB4QOBDIHRC:00000001 [INF] Request finished in 48.1406ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2462617+07:00 0HLB4QOBDIHQM:00000003 [INF] Request finished in 31.6657ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2560283+07:00 0HLB4QOBDIHR3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-01-26T23:06:19.2565080+07:00 0HLB4QOBDIHR3:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-01-26T23:06:19.2597005+07:00 0HLB4QOBDIHR5:00000001 [INF] Request finished in 100.7083ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2639561+07:00 0HLB4QOBDIHR2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/shared/app.js   (ca22a1cb)
+2018-01-26T23:06:19.2642216+07:00 0HLB4QOBDIHR2:00000002 [INF] Sending file. Request path: '"/admin-side/custom/shared/app.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\custom\shared\app.js"' (27b0a520)
+2018-01-26T23:06:19.2645107+07:00 0HLB4QOBDIHR2:00000002 [INF] Request finished in 0.6565ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2654309+07:00 0HLB4QOBDIHQQ:00000002 [INF] Request finished in 41.3289ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2741297+07:00 0HLB4QOBDIHQN:00000003 [INF] Request finished in 38.1238ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2779049+07:00 0HLB4QOBDIHR1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/controllers/login/index.js   (ca22a1cb)
+2018-01-26T23:06:19.2782241+07:00 0HLB4QOBDIHR1:00000002 [INF] Sending file. Request path: '"/admin-side/custom/controllers/login/index.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\custom\controllers\login\index.js"' (27b0a520)
+2018-01-26T23:06:19.2785034+07:00 0HLB4QOBDIHR1:00000002 [INF] Request finished in 0.6874ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2805519+07:00 0HLB4QOBDIHR3:00000002 [INF] Request finished in 24.5372ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2843571+07:00 0HLB4QOBDIHR8:00000001 [INF] Request finished in 102.5121ms 200 application/javascript (791a596a)
+2018-01-26T23:06:19.2986943+07:00 0HLB4QOBDIHR4:00000001 [INF] Request finished in 139.6313ms 200 application/javascript (791a596a)
+2018-01-26T23:06:40.5592638+07:00 0HLB4QOBDIHQT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/login.jpeg   (ca22a1cb)
+2018-01-26T23:06:40.5595143+07:00 0HLB4QOBDIHQT:00000002 [INF] Sending file. Request path: '"/admin-side/img/login.jpeg"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\login.jpeg"' (27b0a520)
+2018-01-26T23:06:40.5673614+07:00 0HLB4QOBDIHQT:00000002 [INF] Request finished in 8.1331ms 200 image/jpeg (791a596a)
+2018-01-26T23:06:40.5808524+07:00 0HLB4QOBDIHQR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/img/favicon.png   (ca22a1cb)
+2018-01-26T23:06:40.5811254+07:00 0HLB4QOBDIHQR:00000002 [INF] Sending file. Request path: '"/admin-side/img/favicon.png"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\img\favicon.png"' (27b0a520)
+2018-01-26T23:06:40.5815046+07:00 0HLB4QOBDIHQR:00000002 [INF] Request finished in 0.6277ms 200 image/png (791a596a)
+2018-01-26T23:32:38.8490320+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:32:39.0600885+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:32:39.0726135+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:32:39.0844966+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:32:39.1001916+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:32:39.1035201+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:32:39.1402331+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:32:39.1643477+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:32:39.1734815+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:32:39.1858327+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:32:39.2220065+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:32:39.2304193+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:32:39.2355006+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:32:39.4487501+07:00 0HLB4R9L67P30:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44335/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-01-26T23:32:39.4789415+07:00 0HLB4R9L67P30:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:32:39.5068968+07:00 0HLB4R9L67P31:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44335/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-01-26T23:32:39.5084246+07:00 0HLB4R9L67P31:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:32:39.5486608+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-01-26T23:32:39.5486612+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-01-26T23:32:39.6160745+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:32:39.6160709+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:32:39.6527753+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:32:39.6533003+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:32:39.6677315+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:32:39.6687220+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:32:39.6923399+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:32:39.6923415+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:32:39.6932028+07:00 0HLB4R9L67P31:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:32:39.6932028+07:00 0HLB4R9L67P30:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:32:39.8891663+07:00 0HLB4R9L67P30:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" with arguments (["NetCore_Shop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:32:39.8891659+07:00 0HLB4R9L67P31:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" with arguments (["NetCore_Shop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:32:39.9012276+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-01-26T23:32:39.9012201+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-01-26T23:32:39.9317468+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:32:39.9323766+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:32:39.9331224+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:32:39.9338640+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:32:39.9340042+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:32:39.9345885+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:32:39.9351128+07:00 0HLB4R9L67P31:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:32:39.9354264+07:00 0HLB4R9L67P30:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:32:39.9409671+07:00 0HLB4R9L67P30:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-01-26T23:32:39.9409671+07:00 0HLB4R9L67P31:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-01-26T23:32:39.9413934+07:00 0HLB4R9L67P31:00000001 [INF] User logged in. (fdce0db4)
+2018-01-26T23:32:39.9414140+07:00 0HLB4R9L67P30:00000001 [INF] User logged in. (fdce0db4)
+2018-01-26T23:32:39.9472475+07:00 0HLB4R9L67P30:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-26T23:32:39.9472475+07:00 0HLB4R9L67P31:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-26T23:32:40.0074694+07:00 0HLB4R9L67P30:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" in 165.3798ms (afa2e885)
+2018-01-26T23:32:40.0074718+07:00 0HLB4R9L67P31:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore-Shop)" in 165.3794ms (afa2e885)
+2018-01-26T23:32:40.0095830+07:00 0HLB4R9L67P30:00000001 [INF] Request finished in 588.189ms 200 application/json; charset=utf-8 (791a596a)
+2018-01-26T23:32:40.0095830+07:00 0HLB4R9L67P31:00000001 [INF] Request finished in 502.5436ms 200 application/json; charset=utf-8 (791a596a)
+2018-01-26T23:32:40.0187904+07:00 0HLB4R9L67P31:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:32:40.0195888+07:00 0HLB4R9L67P31:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:32:40.0222029+07:00 0HLB4R9L67P31:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:32:42.0657525+07:00 0HLB4R9L67P30:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/chartist.min.js.map   (ca22a1cb)
+2018-01-26T23:32:42.0666632+07:00 0HLB4R9L67P30:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:32:42.0681351+07:00 0HLB4R9L67P30:00000002 [INF] Request finished in 2.4375ms 404  (791a596a)
+2018-01-26T23:32:42.5193196+07:00 0HLB4R9L67P31:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:32:42.8598464+07:00 0HLB4R9L67P31:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore-Shop)" in 2837.9544ms (afa2e885)
+2018-01-26T23:32:42.8622709+07:00 0HLB4R9L67P31:00000002 [INF] Request finished in 2843.488ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:32:42.8810276+07:00 0HLB4R9L67P30:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/shared/app.js   (ca22a1cb)
+2018-01-26T23:32:42.8836797+07:00 0HLB4R9L67P30:00000003 [INF] The file "/admin-side/custom/shared/app.js" was not modified (f1f8d725)
+2018-01-26T23:32:42.8861900+07:00 0HLB4R9L67P30:00000003 [INF] Request finished in 5.0627ms 304 application/javascript (791a596a)
+2018-01-26T23:32:43.0684263+07:00 0HLB4R9L67P31:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/chartist.min.js.map   (ca22a1cb)
+2018-01-26T23:32:43.0691429+07:00 0HLB4R9L67P31:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:32:43.0693436+07:00 0HLB4R9L67P31:00000003 [INF] Request finished in 1.0137ms 404  (791a596a)
+2018-01-26T23:36:55.9997531+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:36:56.1553837+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:36:56.1691816+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:36:56.1816921+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:36:56.1983695+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:36:56.2020701+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:36:56.2509333+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:36:56.2837945+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:36:56.2965704+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:36:56.3102533+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:36:56.3533360+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:36:56.3637459+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:36:56.3678478+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:36:56.6359216+07:00 0HLB4RC1RCALU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/   (ca22a1cb)
+2018-01-26T23:36:56.6750635+07:00 0HLB4RC1RCALU:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:36:56.7594439+07:00 0HLB4RC1RCALU:00000001 [INF] Executing action method "NetCore_Shop.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:36:58.9793790+07:00 0HLB4RC1RCALU:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:36:59.5397628+07:00 0HLB4RC1RCALU:00000001 [INF] Executed action "NetCore_Shop.Controllers.HomeController.Index (NetCore_Shop)" in 2784.774ms (afa2e885)
+2018-01-26T23:36:59.5427863+07:00 0HLB4RC1RCALU:00000001 [INF] Request finished in 2914.0061ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:36:59.6575145+07:00 0HLB4RC1RCALU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-01-26T23:36:59.6595945+07:00 0HLB4RC1RCALU:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-01-26T23:36:59.7366836+07:00 0HLB4RC1RCALU:00000002 [INF] Request finished in 79.309ms 200 text/plain (791a596a)
+2018-01-26T23:36:59.7741979+07:00 0HLB4RC1RCALU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/lib/bootstrap/dist/js/bootstrap.js.map   (ca22a1cb)
+2018-01-26T23:36:59.7746091+07:00 0HLB4RC1RCALU:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js.map"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map"' (27b0a520)
+2018-01-26T23:36:59.7978530+07:00 0HLB4RC1RCALU:00000003 [INF] Request finished in 23.6065ms 200 text/plain (791a596a)
+2018-01-26T23:38:15.4589557+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:38:15.5935975+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:38:15.6065949+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:38:15.6180296+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:38:15.6332565+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:38:15.6366883+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:38:15.6692774+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:38:15.6897219+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:38:15.7004398+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:38:15.7111508+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:38:15.7443123+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:38:15.7527930+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:38:15.7570683+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:38:16.0078226+07:00 0HLB4RCPG517J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/   (ca22a1cb)
+2018-01-26T23:38:16.0353194+07:00 0HLB4RCPG517J:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:38:16.1286696+07:00 0HLB4RCPG517J:00000001 [INF] Executing action method "NetCore_Shop.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:38:18.4466602+07:00 0HLB4RCPG517J:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:38:18.9063116+07:00 0HLB4RCPG517J:00000001 [INF] Executed action "NetCore_Shop.Controllers.HomeController.Index (NetCore_Shop)" in 2783.829ms (afa2e885)
+2018-01-26T23:38:18.9093674+07:00 0HLB4RCPG517J:00000001 [INF] Request finished in 2908.7407ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:38:19.0997614+07:00 0HLB4RCPG517J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/favicon.ico   (ca22a1cb)
+2018-01-26T23:38:19.1032826+07:00 0HLB4RCPG517J:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\favicon.ico"' (27b0a520)
+2018-01-26T23:38:19.1488122+07:00 0HLB4RCPG517J:00000002 [INF] Request finished in 49.8911ms 200 image/x-icon (791a596a)
+2018-01-26T23:40:23.5843578+07:00 0HLB4RCPG517K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:40:23.5858258+07:00 0HLB4RCPG517K:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:40:23.5885774+07:00 0HLB4RCPG517K:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:40:23.7195119+07:00 0HLB4RCPG517K:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:40:23.9485266+07:00 0HLB4RCPG517K:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" in 360.2613ms (afa2e885)
+2018-01-26T23:40:23.9487886+07:00 0HLB4RCPG517K:00000001 [INF] Request finished in 364.5391ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:40:23.9868362+07:00 0HLB4RCPG517K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/shared/app.js   (ca22a1cb)
+2018-01-26T23:40:23.9889209+07:00 0HLB4RCPG517K:00000002 [INF] The file "/admin-side/custom/shared/app.js" was not modified (f1f8d725)
+2018-01-26T23:40:23.9913857+07:00 0HLB4RCPG517K:00000002 [INF] Request finished in 4.5736ms 304 application/javascript (791a596a)
+2018-01-26T23:49:19.7457755+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:49:19.8955675+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:49:19.9113451+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:49:19.9233687+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:49:19.9388338+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:49:19.9422958+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:49:19.9772243+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:49:20.0020429+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:49:20.0124587+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:49:20.0248084+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:49:20.0624803+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:49:20.0704846+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:49:20.0747714+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:49:20.3456465+07:00 0HLB4RIVG1S8Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:49:20.3744754+07:00 0HLB4RIVG1S8Q:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:49:20.4590596+07:00 0HLB4RIVG1S8Q:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:49:22.4128904+07:00 0HLB4RIVG1S8Q:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:49:22.7205908+07:00 0HLB4RIVG1S8Q:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" in 2266.5448ms (afa2e885)
+2018-01-26T23:49:22.7782883+07:00 0HLB4RIVG1S8Q:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\trainning .net core\NetCore-Shop\NetCore-Shop\Areas\Admin\Views\Shared\_Layout.cshtml(44,34): error CS1929: 'ClaimsPrincipal' does not contain a definition for 'GetSpecificClaim' and the best extension method overload 'IdentityExtensions.GetSpecificClaim(ClaimsIdentity, string)' requires a receiver of type 'ClaimsIdentity'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromPath(String executingFilePath, String pagePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.GetPage(String executingFilePath, String pagePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-01-26T23:49:22.8053576+07:00 0HLB4RIVG1S8Q:00000001 [INF] Request finished in 2466.2283ms 500 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:49:23.0094756+07:00 0HLB4RIVG1S8Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/favicon.ico   (ca22a1cb)
+2018-01-26T23:49:23.0114204+07:00 0HLB4RIVG1S8Q:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\favicon.ico"' (27b0a520)
+2018-01-26T23:49:23.0136024+07:00 0HLB4RIVG1S8Q:00000002 [INF] Request finished in 4.2536ms 200 image/x-icon (791a596a)
+2018-01-26T23:51:19.6644976+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:51:19.8054674+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:51:19.8197425+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:51:19.8343484+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-01-26T23:51:19.8517157+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-01-26T23:51:19.8549390+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-01-26T23:51:19.8878780+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-01-26T23:51:19.9105905+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-01-26T23:51:19.9193964+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-01-26T23:51:19.9312120+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-01-26T23:51:19.9695886+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:51:19.9778201+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:51:19.9814562+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-01-26T23:51:20.1249573+07:00 0HLB4RK365OER:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:51:20.1585458+07:00 0HLB4RK365OER:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:20.2812938+07:00 0HLB4RK365OER:00000001 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:51:22.3033030+07:00 0HLB4RK365OER:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:51:22.5979775+07:00 0HLB4RK365OER:00000001 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" in 2324.9756ms (afa2e885)
+2018-01-26T23:51:22.6420201+07:00 0HLB4RK365OER:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\trainning .net core\NetCore-Shop\NetCore-Shop\Areas\Admin\Views\Shared\_Layout.cshtml(44,34): error CS1929: 'ClaimsPrincipal' does not contain a definition for 'GetSpecificClaim' and the best extension method overload 'IdentityExtensions.GetSpecificClaim(ClaimsIdentity, string)' requires a receiver of type 'ClaimsIdentity'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromPath(String executingFilePath, String pagePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.GetPage(String executingFilePath, String pagePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-01-26T23:51:22.6729377+07:00 0HLB4RK365OER:00000001 [INF] Request finished in 2555.7433ms 500 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:51:29.4226563+07:00 0HLB4RK365OER:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/login/index   (ca22a1cb)
+2018-01-26T23:51:29.4248363+07:00 0HLB4RK365OER:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:29.4274270+07:00 0HLB4RK365OER:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:51:29.5858219+07:00 0HLB4RK365OER:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-01-26T23:51:29.6494047+07:00 0HLB4RK365OER:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Index (NetCore_Shop)" in 222.3311ms (afa2e885)
+2018-01-26T23:51:29.6496594+07:00 0HLB4RK365OER:00000002 [INF] Request finished in 227.1102ms 200 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:51:29.6836502+07:00 0HLB4RK365OER:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/controllers/login/index.js   (ca22a1cb)
+2018-01-26T23:51:29.6856148+07:00 0HLB4RK365OES:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/custom/shared/app.js   (ca22a1cb)
+2018-01-26T23:51:29.6874712+07:00 0HLB4RK365OER:00000003 [INF] Sending file. Request path: '"/admin-side/custom/controllers/login/index.js"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\admin-side\custom\controllers\login\index.js"' (27b0a520)
+2018-01-26T23:51:29.6878804+07:00 0HLB4RK365OES:00000001 [INF] The file "/admin-side/custom/shared/app.js" was not modified (f1f8d725)
+2018-01-26T23:51:29.6905657+07:00 0HLB4RK365OER:00000003 [INF] Request finished in 7.021ms 200 application/javascript (791a596a)
+2018-01-26T23:51:29.6905657+07:00 0HLB4RK365OES:00000001 [INF] Request finished in 5.0354ms 304 application/javascript (791a596a)
+2018-01-26T23:51:29.8900580+07:00 0HLB4RK365OER:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin-side/js/chartist.min.js.map   (ca22a1cb)
+2018-01-26T23:51:29.8907181+07:00 0HLB4RK365OER:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:29.8912123+07:00 0HLB4RK365OER:00000004 [INF] Request finished in 1.2555ms 404  (791a596a)
+2018-01-26T23:51:32.2822881+07:00 0HLB4RK365OES:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44335/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-01-26T23:51:32.2831442+07:00 0HLB4RK365OES:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:32.3502502+07:00 0HLB4RK365OES:00000002 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore_Shop)" with arguments (["NetCore_Shop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:51:32.3549131+07:00 0HLB4RK365OES:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ShopOnlineDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopOnline.Data.EF " (9958f5bb)
+2018-01-26T23:51:32.4114046+07:00 0HLB4RK365OES:00000002 [INF] Executed DbCommand ("29"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-01-26T23:51:32.4939286+07:00 0HLB4RK365OES:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-01-26T23:51:32.5251467+07:00 0HLB4RK365OES:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-01-26T23:51:32.5368406+07:00 0HLB4RK365OES:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-01-26T23:51:32.5556850+07:00 0HLB4RK365OES:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-01-26T23:51:32.5604842+07:00 0HLB4RK365OES:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-01-26T23:51:32.5607525+07:00 0HLB4RK365OES:00000002 [INF] User logged in. (fdce0db4)
+2018-01-26T23:51:32.5643739+07:00 0HLB4RK365OES:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-26T23:51:32.5980529+07:00 0HLB4RK365OES:00000002 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.LoginController.Authen (NetCore_Shop)" in 284.1697ms (afa2e885)
+2018-01-26T23:51:32.5994100+07:00 0HLB4RK365OES:00000002 [INF] Request finished in 317.1222ms 200 application/json; charset=utf-8 (791a596a)
+2018-01-26T23:51:32.6087682+07:00 0HLB4RK365OER:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:51:32.6094872+07:00 0HLB4RK365OER:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:32.6102371+07:00 0HLB4RK365OER:00000005 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:51:32.6106728+07:00 0HLB4RK365OER:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:51:32.6130219+07:00 0HLB4RK365OER:00000005 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" in 2.8922ms (afa2e885)
+2018-01-26T23:51:32.6413600+07:00 0HLB4RK365OER:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\trainning .net core\NetCore-Shop\NetCore-Shop\Areas\Admin\Views\Shared\_Layout.cshtml(44,34): error CS1929: 'ClaimsPrincipal' does not contain a definition for 'GetSpecificClaim' and the best extension method overload 'IdentityExtensions.GetSpecificClaim(ClaimsIdentity, string)' requires a receiver of type 'ClaimsIdentity'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromPath(String executingFilePath, String pagePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.GetPage(String executingFilePath, String pagePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-01-26T23:51:32.6554246+07:00 0HLB4RK365OER:00000005 [INF] Request finished in 46.6883ms 500 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:51:42.2811598+07:00 0HLB4RK365OES:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44335/admin/home/index   (ca22a1cb)
+2018-01-26T23:51:42.2818950+07:00 0HLB4RK365OES:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-01-26T23:51:42.2821574+07:00 0HLB4RK365OES:00000003 [INF] Executing action method "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-26T23:51:42.2822909+07:00 0HLB4RK365OES:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-01-26T23:51:42.4166979+07:00 0HLB4RK365OES:00000003 [INF] Executed action "NetCore_Shop.Areas.Admin.Controllers.HomeController.Index (NetCore_Shop)" in 134.5425ms (afa2e885)
+2018-01-26T23:51:42.4493936+07:00 0HLB4RK365OES:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\trainning .net core\NetCore-Shop\NetCore-Shop\Areas\Admin\Views\Shared\_Layout.cshtml(44,34): error CS1929: 'ClaimsPrincipal' does not contain a definition for 'GetSpecificClaim' and the best extension method overload 'IdentityExtensions.GetSpecificClaim(ClaimsIdentity, string)' requires a receiver of type 'ClaimsIdentity'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromPath(String executingFilePath, String pagePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.GetPage(String executingFilePath, String pagePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-01-26T23:51:42.4620743+07:00 0HLB4RK365OES:00000003 [INF] Request finished in 180.9887ms 500 text/html; charset=utf-8 (791a596a)
+2018-01-26T23:51:42.6382516+07:00 0HLB4RK365OER:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44335/favicon.ico   (ca22a1cb)
+2018-01-26T23:51:42.6385894+07:00 0HLB4RK365OER:00000006 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\trainning .net core\NetCore-Shop\NetCore-Shop\wwwroot\favicon.ico"' (27b0a520)
+2018-01-26T23:51:42.6416673+07:00 0HLB4RK365OER:00000006 [INF] Request finished in 3.4322ms 200 image/x-icon (791a596a)

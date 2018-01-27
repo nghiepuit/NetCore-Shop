@@ -1,455 +1,487 @@
-﻿<!doctype html>
+﻿@using NetCore_Shop.Extensions
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="~/admin-side/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="~/admin-side/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Dashboard Pro by Creative Tim</title>
+    <title>@ViewData["Title"]</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <link href="~/admin-side/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/admin-side/css/material-dashboard.css" rel="stylesheet" />
-    <link href="~/admin-side/css/demo.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="~/admin-side/css/notify-metro.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/admin-side/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/admin-side/css/mdb.min.css" rel="stylesheet">
+    <link href="~/admin-side/css/style.css" rel="stylesheet">
+    <style>
+        .cascading-admin-card .admin-up {
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: -20px;
+        }
+
+        .cascading-admin-card .admin-up .fa {
+            padding: 1.7rem;
+            font-size: 2rem;
+            color: #fff;
+            text-align: left;
+            margin-right: 1rem;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+            box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        }
+    </style>
 </head>
-<body>
-    <div class="wrapper">
-        <div class="sidebar" data-active-color="blue" data-background-color="black" data-image="./../../admin-side/img/sidebar-1.jpg">
-            <!--
-                Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
-                Tip 2: you can also add an image using data-image tag
-                Tip 3: you can change the color of the sidebar with data-background-color="white | black"
-            -->
-            <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-                    CT
-                </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-                    Creative Tim
-                </a>
-            </div>
-            <div class="sidebar-wrapper">
-                <div class="user">
-                    <div class="photo">
-                        <img src="~/admin-side/img/faces/avatar.jpg" />
-                    </div>
-                    <div class="info">
-                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                            <span>
-                                Tania Andrew
-                                <b class="caret"></b>
-                            </span>
-                        </a>
-                        <div class="clearfix"></div>
-                        <div class="collapse" id="collapseExample">
-                            <ul class="nav">
-                                <li>
-                                    <a href="#">
-                                        <span class="sidebar-mini"> MP </span>
-                                        <span class="sidebar-normal"> My Profile </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="sidebar-mini"> EP </span>
-                                        <span class="sidebar-normal"> Edit Profile </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="sidebar-mini"> S </span>
-                                        <span class="sidebar-normal"> Settings </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<body class="fixed-sn mdb-skin">
+    <!--Main Navigation-->
+    <header>
+
+        
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+            <!-- Logo -->
+            <li class="logo-sn waves-effect">
+                <div class=" text-center">
+                    <a href="#" class="pl-0"><img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" class=""></a>
                 </div>
-                <ul class="nav">
-                    <li class="active">
-                        <a href="./dashboard.html">
-                            <i class="material-icons">dashboard</i>
-                            <p> Dashboard </p>
-                        </a>
-                    </li>
+            </li>
+            <!--/. Logo -->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-effect">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
                     <li>
-                        <a data-toggle="collapse" href="#pagesExamples">
-                            <i class="material-icons">image</i>
-                            <p>
-                                Pages
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse" id="pagesExamples">
-                            <ul class="nav">
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-tachometer"></i> Dashboards<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
                                 <li>
-                                    <a href="./pages/pricing.html">
-                                        <span class="sidebar-mini"> P </span>
-                                        <span class="sidebar-normal"> Pricing </span>
-                                    </a>
+                                    <a href="../dashboards/v-1.html" class="waves-effect">Version 1</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/rtl.html">
-                                        <span class="sidebar-mini"> RS </span>
-                                        <span class="sidebar-normal"> RTL Support </span>
-                                    </a>
+                                    <a href="../dashboards/v-2.html" class="waves-effect">Version 2</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/timeline.html">
-                                        <span class="sidebar-mini"> T </span>
-                                        <span class="sidebar-normal"> Timeline </span>
-                                    </a>
+                                    <a href="../dashboards/v-3.html" class="waves-effect">Version 3</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/login.html">
-                                        <span class="sidebar-mini"> LP </span>
-                                        <span class="sidebar-normal"> Login Page </span>
-                                    </a>
+                                    <a href="../dashboards/v-4.html" class="waves-effect">Version 4</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/register.html">
-                                        <span class="sidebar-mini"> RP </span>
-                                        <span class="sidebar-normal"> Register Page </span>
-                                    </a>
+                                    <a href="../dashboards/v-5.html" class="waves-effect">Version 5</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/lock.html">
-                                        <span class="sidebar-mini"> LSP </span>
-                                        <span class="sidebar-normal"> Lock Screen Page </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./pages/user.html">
-                                        <span class="sidebar-mini"> UP </span>
-                                        <span class="sidebar-normal"> User Profile </span>
-                                    </a>
+                                    <a href="../dashboards/v-6.html" class="waves-effect">Version 6</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#componentsExamples">
-                            <i class="material-icons">apps</i>
-                            <p>
-                                Components
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse" id="componentsExamples">
-                            <ul class="nav">
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-photo"></i> Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
                                 <li>
-                                    <a href="./components/buttons.html">
-                                        <span class="sidebar-mini"> B </span>
-                                        <span class="sidebar-normal"> Buttons </span>
-                                    </a>
+                                    <a href="../pages/login.html" class="waves-effect">Login</a>
                                 </li>
                                 <li>
-                                    <a href="./components/grid.html">
-                                        <span class="sidebar-mini"> GS </span>
-                                        <span class="sidebar-normal"> Grid System </span>
-                                    </a>
+                                    <a href="../pages/register.html" class="waves-effect">Register</a>
                                 </li>
                                 <li>
-                                    <a href="./components/panels.html">
-                                        <span class="sidebar-mini"> P </span>
-                                        <span class="sidebar-normal"> Panels </span>
-                                    </a>
+                                    <a href="../pages/pricing.html" class="waves-effect">Pricing</a>
                                 </li>
                                 <li>
-                                    <a href="./components/sweet-alert.html">
-                                        <span class="sidebar-mini"> SA </span>
-                                        <span class="sidebar-normal"> Sweet Alert </span>
-                                    </a>
+                                    <a href="../pages/about.html" class="waves-effect">About us</a>
                                 </li>
                                 <li>
-                                    <a href="./components/notifications.html">
-                                        <span class="sidebar-mini"> N </span>
-                                        <span class="sidebar-normal"> Notifications </span>
-                                    </a>
+                                    <a href="../pages/single.html" class="waves-effect">Single post</a>
                                 </li>
                                 <li>
-                                    <a href="./components/icons.html">
-                                        <span class="sidebar-mini"> I </span>
-                                        <span class="sidebar-normal"> Icons </span>
-                                    </a>
+                                    <a href="../pages/post.html" class="waves-effect">Post listing</a>
                                 </li>
                                 <li>
-                                    <a href="./components/typography.html">
-                                        <span class="sidebar-mini"> T </span>
-                                        <span class="sidebar-normal"> Typography </span>
-                                    </a>
+                                    <a href="../pages/landing.html" class="waves-effect">Landing page</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/customers.html" class="waves-effect">Cusomers</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/invoice.html" class="waves-effect">Invoice</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/page-creator.html" class="waves-effect">Page Creator</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/support.html" class="waves-effect">Support</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/chat.html" class="waves-effect">Chat</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#formsExamples">
-                            <i class="material-icons">content_paste</i>
-                            <p>
-                                Forms
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse" id="formsExamples">
-                            <ul class="nav">
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> @User.GetSpecificClaim("FullName")<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
                                 <li>
-                                    <a href="./forms/regular.html">
-                                        <span class="sidebar-mini"> RF </span>
-                                        <span class="sidebar-normal"> Regular Forms </span>
-                                    </a>
+                                    <a href="../profile/basic-1.html" class="waves-effect">Basic 1</a>
                                 </li>
                                 <li>
-                                    <a href="./forms/extended.html">
-                                        <span class="sidebar-mini"> EF </span>
-                                        <span class="sidebar-normal"> Extended Forms </span>
-                                    </a>
+                                    <a href="../profile/basic-2.html" class="waves-effect">Basic 2</a>
                                 </li>
                                 <li>
-                                    <a href="./forms/validation.html">
-                                        <span class="sidebar-mini"> VF </span>
-                                        <span class="sidebar-normal"> Validation Forms </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./forms/wizard.html">
-                                        <span class="sidebar-mini"> W </span>
-                                        <span class="sidebar-normal"> Wizard </span>
-                                    </a>
+                                    <a href="../profile/extended.html" class="waves-effect">Extended</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#tablesExamples">
-                            <i class="material-icons">grid_on</i>
-                            <p>
-                                Tables
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse" id="tablesExamples">
-                            <ul class="nav">
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-css3"></i> CSS<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
                                 <li>
-                                    <a href="./tables/regular.html">
-                                        <span class="sidebar-mini"> RT </span>
-                                        <span class="sidebar-normal"> Regular Tables </span>
-                                    </a>
+                                    <a href="../css/grid.html" class="waves-effect">Grid system</a>
                                 </li>
                                 <li>
-                                    <a href="./tables/extended.html">
-                                        <span class="sidebar-mini"> ET </span>
-                                        <span class="sidebar-normal"> Extended Tables </span>
-                                    </a>
+                                    <a href="../css/media.html" class="waves-effect">Media object</a>
                                 </li>
                                 <li>
-                                    <a href="./tables/datatables.net.html">
-                                        <span class="sidebar-mini"> DT </span>
-                                        <span class="sidebar-normal"> DataTables.net </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a data-toggle="collapse" href="#mapsExamples">
-                            <i class="material-icons">place</i>
-                            <p>
-                                Maps
-                                <b class="caret"></b>
-                            </p>
-                        </a>
-                        <div class="collapse" id="mapsExamples">
-                            <ul class="nav">
-                                <li>
-                                    <a href="./maps/google.html">
-                                        <span class="sidebar-mini"> GM </span>
-                                        <span class="sidebar-normal"> Google Maps </span>
-                                    </a>
+                                    <a href="../css/utilities.html" class="waves-effect">Utilities / helpers</a>
                                 </li>
                                 <li>
-                                    <a href="./maps/fullscreen.html">
-                                        <span class="sidebar-mini"> FSM </span>
-                                        <span class="sidebar-normal"> Full Screen Map </span>
-                                    </a>
+                                    <a href="../css/code.html" class="waves-effect">Code</a>
                                 </li>
                                 <li>
-                                    <a href="./maps/vector.html">
-                                        <span class="sidebar-mini"> VM </span>
-                                        <span class="sidebar-normal"> Vector Map </span>
-                                    </a>
+                                    <a href="../css/icons.html" class="waves-effect">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="../css/images.html" class="waves-effect">Images</a>
+                                </li>
+                                <li>
+                                    <a href="../css/typography.html" class="waves-effect">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="../css/animations.html" class="waves-effect">Animations</a>
+                                </li>
+                                <li>
+                                    <a href="../css/colors.html" class="waves-effect">Colors</a>
+                                </li>
+                                <li>
+                                    <a href="../css/hover.html" class="waves-effect">Hover effects</a>
+                                </li>
+                                <li>
+                                    <a href="../css/masks.html" class="waves-effect">Masks</a>
+                                </li>
+                                <li>
+                                    <a href="../css/shadows.html" class="waves-effect">Shadows</a>
+                                </li>
+                                <li>
+                                    <a href="../css/skins.html" class="waves-effect">Skins</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="./widgets.html">
-                            <i class="material-icons">widgets</i>
-                            <p> Widgets </p>
-                        </a>
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-th"></i> Components<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../components/buttons.html" class="waves-effect">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="../components/cards.html" class="waves-effect">Cards</a>
+                                </li>
+                                <li>
+                                    <a href="../components/panels.html" class="waves-effect">Panels</a>
+                                </li>
+                                <li>
+                                    <a href="../components/list.html" class="waves-effect">List group</a>
+                                </li>
+                                <li>
+                                    <a href="../components/pagination.html" class="waves-effect">Pagination</a>
+                                </li>
+                                <li>
+                                    <a href="../components/progress.html" class="waves-effect">Progress bars</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tabs.html" class="waves-effect">Tabs & pills</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tags.html" class="waves-effect">Tags, labels & badges</a>
+                                </li>
+                                <li>
+                                    <a href="../components/collapse.html" class="waves-effect">Collapse</a>
+                                </li>
+                                <li>
+                                    <a href="../components/date.html" class="waves-effect">Date picker</a>
+                                </li>
+                                <li>
+                                    <a href="../components/time.html" class="waves-effect">Time picker</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tooltips.html" class="waves-effect">Tooltips</a>
+                                </li>
+                                <li>
+                                    <a href="../components/popovers.html" class="waves-effect">Popovers</a>
+                                </li>
+                                <li>
+                                    <a href="../components/stepper.html" class="waves-effect">Stepper</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="./charts.html">
-                            <i class="material-icons">timeline</i>
-                            <p> Charts </p>
-                        </a>
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-check-square-o"></i> Forms<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../forms/basic.html" class="waves-effect">Basic</a>
+                                </li>
+                                <li>
+                                    <a href="../forms/extended.html" class="waves-effect">Extended</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="./calendar.html">
-                            <i class="material-icons">date_range</i>
-                            <p> Calendar </p>
-                        </a>
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-table"></i> Tables<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../tables/basic.html" class="waves-effect">Basic</a>
+                                </li>
+                                <li>
+                                    <a href="../tables/extended.html" class="waves-effect">Extended</a>
+                                </li>
+                                <li>
+                                    <a href="../tables/datatables.html" class="waves-effect">DataTables.net</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-map"></i> Maps<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../maps/google.html" class="waves-effect">Google Maps</a>
+                                </li>
+                                <li>
+                                    <a href="../maps/full.html" class="waves-effect">Full screen map</a>
+                                </li>
+                                <li>
+                                    <a href="../maps/vector.html" class="waves-effect">Vector world map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Simple link -->
+                    <li><a href="../alerts/alerts.html" class="collapsible-header waves-effect"><i class="fa fa-bell-o"></i> Alerts</a></li>
+
+                    <li><a href="../modals/modals.html" class="collapsible-header waves-effect"><i class="fa fa-bolt"></i> Modals</a></li>
+
+                    <li><a href="../charts/charts.html" class="collapsible-header waves-effect"><i class="fa fa-pie-chart"></i> Charts</a></li>
+
+                    <li><a href="../calendar/calendar.html" class="collapsible-header waves-effect"><i class="fa fa-calendar-check-o"></i> Calendar</a></li>
+
+                    <li><a href="../sections/sections.html" class="collapsible-header waves-effect"><i class="fa fa-th-large"></i> Sections</a></li>
                 </ul>
+            </li>
+            <!--/. Side navigation links -->
+            <div class="sidenav-bg mask-strong"></div>
+        </ul>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>Dashboard v.1</p>
+            </div>
+
+            <!--Navbar links-->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown notifications-nav">
+                    <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <span class="badge red">3</span> <i class="fa fa-bell"></i>
+                        <span class="d-none d-md-inline-block">Notifications</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                            <span>New order received</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 13 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                            <span>New order received</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 33 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-line-chart mr-2" aria-hidden="true"></i>
+                            <span>Your campaign is about to end</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 53 min</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">@User.GetSpecificClaim("FullName")</span>
+                    </a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Log Out</a>
+                        <a class="dropdown-item" href="#">My account</a>
+                    </div>
+                </li>
+            </ul>
+            <!--/Navbar links-->
+        </nav>
+        <!-- /.Navbar -->
+        <!-- Fixed button -->
+        <div class="fixed-action-btn clearfix d-none d-xl-block" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-lg red">
+                <i class="fa fa-pencil"></i>
+            </a>
+
+            <ul>
+                <li><a class="btn-floating red"><i class="fa fa-star"></i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="fa fa-user"></i></a></li>
+                <li><a class="btn-floating green"><i class="fa fa-envelope"></i></a></li>
+                <li><a class="btn-floating blue"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+        <!-- Fixed button -->
+    </header>
+    <!--Main Navigation-->
+    <!--Main layout-->
+    <main>
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </main>
+    <!--Main layout-->
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only pt-0 mt-5 rgba-stylish-light">
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                &copy; 2017 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
             </div>
         </div>
-        <div class="main-panel">
-            <nav class="navbar navbar-transparent navbar-absolute">
-                <div class="container-fluid">
-                    <div class="navbar-minimize">
-                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
-                            <i class="material-icons visible-on-sidebar-regular">more_vert</i>
-                            <i class="material-icons visible-on-sidebar-mini">view_list</i>
-                        </button>
-                    </div>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"> Dashboard </a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">dashboard</i>
-                                    <p class="hidden-lg hidden-md">Dashboard</p>
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">notifications</i>
-                                    <span class="notification">5</span>
-                                    <p class="hidden-lg hidden-md">
-                                        Notifications
-                                        <b class="caret"></b>
-                                    </p>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Mike John responded to your email</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">You have 5 new tasks</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">You're now friend with Andrew</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another Notification</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Another One</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">person</i>
-                                    <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
-                            </li>
-                            <li class="separator hidden-lg hidden-md"></li>
-                        </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group form-search is-empty">
-                                <input type="text" class="form-control" placeholder=" Search ">
-                                <span class="material-input"></span>
-                            </div>
-                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                <i class="material-icons">search</i>
-                                <div class="ripple-container"></div>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-            <div class="content">
-                <div class="container-fluid">
-                    @RenderBody()
-                </div>
-            </div>
-            <footer class="footer">
-                <div class="container-fluid">
-                    <nav class="pull-left">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Company
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Portofolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <p class="copyright pull-right">
-                        &copy;
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>
-                        <a href="http://www.creative-tim.com"> Creative Tim </a>, made with love for a better web
-                    </p>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <!--   Core JS Files   -->
-    <script src="~/admin-side/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="~/admin-side/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="~/admin-side/js/material.min.js" type="text/javascript"></script>
-    <script src="~/admin-side/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-    <script src="~/admin-side/js/arrive.min.js" type="text/javascript"></script>
-    <script src="~/admin-side/js/jquery.validate.min.js"></script>
-    <script src="~/admin-side/js/moment.min.js"></script>
-    <script src="~/admin-side/js/chartist.min.js"></script>
-    <script src="~/admin-side/js/jquery.bootstrap-wizard.js"></script>
-    <script src="~/admin-side/js/bootstrap-notify.js"></script>
-    <script src="~/admin-side/js/bootstrap-datetimepicker.js"></script>
-    <script src="~/admin-side/js/jquery-jvectormap.js"></script>
-    <script src="~/admin-side/js/nouislider.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIsrygMZ9cmqzZ8yyY4p3eRjq9NmRUAzc"></script>
-    <script src="~/admin-side/js/jquery.select-bootstrap.js"></script>
-    <script src="~/admin-side/js/jquery.datatables.js"></script>
-    <script src="~/admin-side/js/sweetalert2.js"></script>
-    <script src="~/admin-side/js/jasny-bootstrap.min.js"></script>
-    <script src="~/admin-side/js/fullcalendar.min.js"></script>
-    <script src="~/admin-side/js/jquery.tagsinput.js"></script>
-    <script src="~/admin-side/js/material-dashboard.js?v=1.2.1"></script>
-    <script src="~/admin-side/js/demo.js"></script>
-    <script src="~/admin-side/js/notify.min.js"></script>
-    <script src="~/admin-side/js/notify-metro.js"></script>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="~/admin-side/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/admin-side/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/admin-side/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/admin-side/js/mdb.min.js"></script>
     <script src="~/admin-side/js/bootbox.min.js"></script>
     <script src="~/admin-side/custom/shared/app.js"></script>
+    <!--Initializations-->
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+        var container = document.getElementById('slide-out');
+        Ps.initialize(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+        // Data Picker Initialization
+        $('.datepicker').pickadate();
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+
+        // Tooltips Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!-- Charts -->
+    <script>
+        // Small chart
+        $(function () {
+            $('.min-chart#chart-sales').easyPieChart({
+                barColor: "#FF5252",
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        });
+
+        //Main chart
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+            type: 'line',
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [{
+                    label: "My First dataset",
+                    fillColor: "#fff",
+                    backgroundColor: 'rgba(255, 255, 255, .3)',
+                    borderColor: 'rgba(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45],
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "#fff",
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: true,
+                            color: "rgba(255,255,255,.25)"
+                        },
+                        ticks: {
+                            fontColor: "#fff",
+                        },
+                    }],
+                    yAxes: [{
+                        display: true,
+                        gridLines: {
+                            display: true,
+                            color: "rgba(255,255,255,.25)"
+                        },
+                        ticks: {
+                            fontColor: "#fff",
+                        },
+                    }],
+                }
+            }
+        });
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

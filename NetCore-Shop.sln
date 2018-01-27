@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore-Shop", "NetCore-Shop\NetCore-Shop.csproj", "{08CD1D6F-A0CF-4B72-936D-C9A31B45F795}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore_Shop", "NetCore-Shop\NetCore_Shop.csproj", "{08CD1D6F-A0CF-4B72-936D-C9A31B45F795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Infrastructure", "ShopOnline.Infrastructure\ShopOnline.Infrastructure.csproj", "{AFF0E1B7-E696-4542-9DCF-30521B44D712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Infrastructure", "ShopOnline.Infrastructure\ShopOnline.Infrastructure.csproj", "{AFF0E1B7-E696-4542-9DCF-30521B44D712}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Utilities", "ShopOnline.Utilities\ShopOnline.Utilities.csproj", "{95A8E2F4-80F3-419A-BA6F-F9D19B68CA04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Utilities", "ShopOnline.Utilities\ShopOnline.Utilities.csproj", "{95A8E2F4-80F3-419A-BA6F-F9D19B68CA04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Data", "ShopOnline.Data\ShopOnline.Data.csproj", "{2468EA59-EF97-4CF1-BDF6-D3A3ED522E0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Data", "ShopOnline.Data\ShopOnline.Data.csproj", "{2468EA59-EF97-4CF1-BDF6-D3A3ED522E0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Data.EF", "ShopOnline.Data.EF\ShopOnline.Data.EF.csproj", "{85BBDA06-68DD-4798-A66B-20E77A365FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Data.EF", "ShopOnline.Data.EF\ShopOnline.Data.EF.csproj", "{85BBDA06-68DD-4798-A66B-20E77A365FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopOnline.Service", "ShopOnline.Service\ShopOnline.Service.csproj", "{01146F0F-A88D-40FB-84DA-F6FAD776365B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopOnline.Service", "ShopOnline.Service\ShopOnline.Service.csproj", "{01146F0F-A88D-40FB-84DA-F6FAD776365B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{269CAD3C-D868-4A93-BCB5-E70B9D246735}"
 EndProject
