@@ -93,7 +93,7 @@ namespace ShopOnline.Service.Implementation
 
         public void ReOrder(int sourceId, int targetId)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Save()
@@ -103,12 +103,12 @@ namespace ShopOnline.Service.Implementation
 
         public void Update(ProductCategoryViewModel productCategoryViewModel)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

@@ -1,0 +1,44 @@
+﻿@model List<FunctionViewModel>
+<ul id="slide-out" class="side-nav fixed custom-scrollbar">
+    <!-- Logo -->
+    <li class="logo-sn waves-effect">
+        <div class=" text-center">
+            <a href="#" class="pl-0"><img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" class=""></a>
+        </div>
+    </li>
+    <!--/. Logo -->
+    <!--Search Form-->
+    <li>
+        <form class="search-form" role="search">
+            <div class="form-group waves-effect">
+                <input type="text" class="form-control" placeholder="" disabled>
+            </div>
+        </form>
+    </li>
+    <!--/.Search Form-->
+    <!-- Side navigation links -->
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            @foreach (var item in Model.Where(x => string.IsNullOrEmpty(x.ParentId)))
+            {
+                <li>
+                    <a class="collapsible-header waves-effect arrow-r"><i class="fa @item.IconCss"></i> @item.Name<i class="fa fa-angle-down rotate-icon"></i></a>
+                    @if (Model.Any(x => x.ParentId == item.Id))
+                    {
+                        <div class="collapsible-body">
+                            <ul>
+                                @foreach (var jitem in Model.Where(x => x.ParentId == item.Id))
+                                {
+
+                                    <li>
+                                        <a href="@jitem.URL" class="waves-effect">@jitem.Name</a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    }
+                </li>
+            }
+        </ul>
+    </li>
+</ul>

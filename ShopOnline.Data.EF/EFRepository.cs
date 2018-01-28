@@ -32,7 +32,15 @@ namespace ShopOnline.Data.EF
 
         public IQueryable<T> FindAll(params Expression<Func<T, object>>[] includeProperties)
         {
-            throw new NotImplementedException();
+            IQueryable<T> items = _context.Set<T>();
+            if (includeProperties != null)
+            {
+                foreach (var includeProperty in includeProperties)
+                {
+                    items = items.Include(includeProperty);
+                }
+            }
+            return items;
         }
 
         public IQueryable<T> FindAll(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
