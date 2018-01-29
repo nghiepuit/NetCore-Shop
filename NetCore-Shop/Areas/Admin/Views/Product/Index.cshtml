@@ -2,33 +2,75 @@
     ViewData["Title"] = "Danh Sách Sản Phẩm";
 }
 
+@section Styles{
+    <style>
+        div.mdb-select {
+            display: inline-block !important;
+            margin: 0 0.5em;
+        }
+        div.custom{
+            text-align: right;
+        }
+        div.custom p{
+            display: inline;
+            margin-right: 0.5em;
+        }
+        div.custom input{
+            display: inline-block;
+            width: 50%;
+        }
+    </style>
+}
+
 <h2 class="title text-center"><strong>@ViewData["Title"]</strong></h2>
 <div class="card card-cascade narrower z-depth-1">
     <div class="px-4">
 
-        <div class="table-responsive">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <label>
+                    Hiển thị
+                    <select id="ddlShowPage" class="mdb-select colorful-select dropdown-primary mt-2 hidden-md-down initialized">
+                        <option value="5" selected="">5</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> phần tử
+                </label>
+            </div>
+            <div class="col-sm-12 col-md-6 custom">
+                <p>
+                    Từ khóa:
+                </p>
+                <input type="search" class="form-control" id="txtKeyword">
+                <button class="btn btn-sm btn-primary" id="btnSearch">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="table-responsive table-bordered table-striped">
+
             <!--Table-->
             <table class="table table-hover mb-0">
 
                 <!--Table head-->
                 <thead>
                     <tr>
-                        <th>
+                        <th class="th-lg">
                             #
                         </th>
-                        <th class="th-lg"><a>Name <i class="fa fa-sort ml-1"></i></a></th>
-                        <th class="th-lg">Category</th>
-                        <th class="th-lg"><a href="">Price<i class="fa fa-sort ml-1"></i></a></th>
-                        <th class="th-lg"><a href="">Created Date<i class="fa fa-sort ml-1"></i></a></th>
-                        <th class="th-lg"><a href="">Status<i class="fa fa-sort ml-1"></i></a></th>
-                        <th class="th-lg">Action</th>
+                        <th><a>Name <i class="fa fa-sort ml-1"></i></a></th>
+                        <th>Category</th>
+                        <th><a href="">Price<i class="fa fa-sort ml-1"></i></a></th>
+                        <th><a href="">Created Date<i class="fa fa-sort ml-1"></i></a></th>
+                        <th><a href="">Status<i class="fa fa-sort ml-1"></i></a></th>
+                        <th width="15%">Action</th>
                     </tr>
                 </thead>
                 <!--Table head-->
                 <!--Table body-->
-                <tbody id="tbl-content">
-
-                </tbody>
+                <tbody id="tbl-content"></tbody>
                 <!--Table body-->
             </table>
             <!--Table-->
@@ -38,51 +80,20 @@
 
         <!--Bottom Table UI-->
         <div class="d-flex justify-content-between">
-
-            <!--Name-->
-            <select class="mdb-select colorful-select dropdown-primary mt-2 hidden-md-down initialized">
-                <option value="" disabled="">Rows number</option>
-                <option value="1" selected="">5 rows</option>
-                <option value="2">25 rows</option>
-                <option value="3">50 rows</option>
-                <option value="4">100 rows</option>
-            </select>
-
-            <!--Pagination -->
-            <nav class="my-4">
-                <ul class="pagination pagination-circle pg-blue mb-0">
-
-                    <!--First-->
-                    <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link waves-effect waves-effect">First</a></li>
-
-                    <!--Arrow left-->
-                    <li class="page-item disabled">
-                        <a class="page-link waves-effect waves-effect" aria-label="Previous">
-                            <span aria-hidden="true">«</span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-
-                    <!--Numbers-->
-                    <li class="page-item active"><a class="page-link waves-effect waves-effect">1</a></li>
-                    <li class="page-item"><a class="page-link waves-effect waves-effect">2</a></li>
-                    <li class="page-item"><a class="page-link waves-effect waves-effect">3</a></li>
-                    <li class="page-item"><a class="page-link waves-effect waves-effect">4</a></li>
-                    <li class="page-item"><a class="page-link waves-effect waves-effect">5</a></li>
-
-                    <!--Arrow right-->
-                    <li class="page-item">
-                        <a class="page-link waves-effect waves-effect" aria-label="Next">
-                            <span aria-hidden="true">»</span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </li>
-
-                    <!--First-->
-                    <li class="page-item clearfix d-none d-md-block"><a class="page-link waves-effect waves-effect">Last</a></li>
-                </ul>
-            </nav>
-            <!--/Pagination -->
+            <div class="col-sm-12 col-md-5">
+                <nav class="my-4">
+                    <p>
+                        Hiển thị <span id="lblFrom"></span> đến <span id="lblTo"></span> của <span id="lblTotalRecords"></span> phần tử
+                    </p>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <!--Pagination -->
+                <nav class="my-4 float-right">
+                    <ul class="pagination pagination-circle pg-blue mb-0" id="paginationUL"></ul>
+                </nav>
+                <!--/Pagination -->
+            </div>
         </div>
         <!--Bottom Table UI-->
     </div>
@@ -91,12 +102,14 @@
 @section Scripts{
     <script id="table-template" type="x-tmpl-mustache">
         <tr>
-            <td>{{ Image }}</td>
+            <td class="text-center">
+                {{{ Image }}}
+            </td>
             <td>{{ Name }}</td>
             <td>{{ CategoryName }}</td>
             <td>{{ Price }}</td>
             <td>{{ CreatedDate }}</td>
-            <td>{{ Status }}</td>
+            <td>{{{ Status }}}</td>
             <td>
                 <button class="btn btn-sm btn-warning">
                     <span class="fa fa-pencil"></span>
@@ -107,4 +120,11 @@
             </td>
         </tr>
     </script>
+
+    <script src="~/admin-side/custom/controllers/product/index.js"></script>
+    <script>
+        var product = new productController();
+        product.initialize();
+    </script>
+
 }

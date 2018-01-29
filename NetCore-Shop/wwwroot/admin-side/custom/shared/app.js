@@ -1,6 +1,6 @@
 ﻿var app = {
     configs: {
-        pageSize: 10,
+        pageSize: 5,
         pageIndex: 1
     },
     notify: function (message, type) {
@@ -68,19 +68,18 @@
         return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
     },
     startLoading: function () {
-        if ($('.dv-loading').length > 0)
-            $('.dv-loading').removeClass('hide');
+        if ($('.preloader-wrapper').length > 0)
+            $('.preloader-wrapper').show();
     },
     stopLoading: function () {
-        if ($('.dv-loading').length > 0)
-            $('.dv-loading')
-                .addClass('hide');
+        if ($('.preloader-wrapper').length > 0)
+            $('.preloader-wrapper').hide();
     },
     getStatus: function (status) {
         if (status === 1)
-            return '<span class="label label-success">Kích hoạt</span>';
+            return '<span class="badge green">Kích hoạt</span>';
         else
-            return '<span class="label label-danger">Khoá</span>';
+            return '<span class="badge red">Khoá</span>';
     },
     formatNumber: function (number, precision) {
         if (!isFinite(number)) {

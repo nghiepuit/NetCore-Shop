@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="~/admin-side/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="~/admin-side/img/favicon.png" />
+    <link rel="icon" type="image/png" href="~/admin-side/img/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>@ViewData["Title"]</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -23,21 +23,28 @@
             margin-top: -20px;
         }
 
-            .cascading-admin-card .admin-up .fa {
-                padding: 1.7rem;
-                font-size: 2rem;
-                color: #fff;
-                text-align: left;
-                margin-right: 1rem;
-                border-radius: 3px;
-                -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-                box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-            }
+        .cascading-admin-card .admin-up .fa {
+            padding: 1.7rem;
+            font-size: 2rem;
+            color: #fff;
+            text-align: left;
+            margin-right: 1rem;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+            box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        }
 
         main {
             margin-left: 1em !important;
             margin-right: 1em !important;
         }
+
+        .preloader-wrapper{
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+        }
+
     </style>
     @RenderSection("Styles", required: false)
 </head>
@@ -116,6 +123,19 @@
         </div>
     </main>
     <!--Main layout-->
+    <!-- Loading -->
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading -->
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="~/admin-side/js/jquery-3.2.1.min.js"></script>
@@ -123,6 +143,7 @@
     <script type="text/javascript" src="~/admin-side/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="~/admin-side/js/mdb.min.js"></script>
     <script src="~/lib/mustache/mustache.js"></script>
+    <script src="~/lib/twbs-pagination/jquery.twbsPagination.js"></script>
     <script src="~/admin-side/js/bootbox.min.js"></script>
     <script src="~/admin-side/custom/shared/app.js"></script>
     <!--Initializations-->
@@ -151,62 +172,6 @@
         })
     </script>
 
-    <!-- Charts -->
-    <script>
-        // Small chart
-        $(function () {
-            $('.min-chart#chart-sales').easyPieChart({
-                barColor: "#FF5252",
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-        });
-
-        //Main chart
-        var ctxL = document.getElementById("lineChart").getContext('2d');
-        var myLineChart = new Chart(ctxL, {
-            type: 'line',
-            data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
-                datasets: [{
-                    label: "My First dataset",
-                    fillColor: "#fff",
-                    backgroundColor: 'rgba(255, 255, 255, .3)',
-                    borderColor: 'rgba(255, 99, 132)',
-                    data: [0, 10, 5, 2, 20, 30, 45],
-                }]
-            },
-            options: {
-                legend: {
-                    labels: {
-                        fontColor: "#fff",
-                    }
-                },
-                scales: {
-                    xAxes: [{
-                        gridLines: {
-                            display: true,
-                            color: "rgba(255,255,255,.25)"
-                        },
-                        ticks: {
-                            fontColor: "#fff",
-                        },
-                    }],
-                    yAxes: [{
-                        display: true,
-                        gridLines: {
-                            display: true,
-                            color: "rgba(255,255,255,.25)"
-                        },
-                        ticks: {
-                            fontColor: "#fff",
-                        },
-                    }],
-                }
-            }
-        });
-    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
